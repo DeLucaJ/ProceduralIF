@@ -4,13 +4,14 @@ import random
 from string import Template
 
 # Constants
-GRAMMAR_TERM = r"\S*"	# Regular Expression for terms in grammar
+GRAMMAR_TERM = r"<\S*>"	# Regular Expression for terms in grammar
 NON_TERMINAL = r"\$\S*"	# Regular Expression for non_terminal in template form
 
-class grammar(dict):
+class rdict(dict):
     '''
     Modification of dictionary
-	Allows the return of a random single item in a key list.
+	- Allows the return of a random single item in a key list.
+	- Useful for random generation using string templates
     '''
     def __getitem__(self, key):
         return random.choice(super(rdict, self).__getitem__(key))
@@ -24,7 +25,14 @@ def grammar_to_template(line):
 	@param line:	a string in grammar format
 	@return tline: 	line in template format
 	'''
-	pass
+	tline = line[:]
+	to_replace = re.findall(GRAMMAR_TERM, line)
+	
+	for item in to_replace:
+		tform = '$' + item[1:-1]
+		tline = tline.replace(item, tform)
+
+	return tline
 
 def parse(file):
 	'''
@@ -33,7 +41,7 @@ def parse(file):
 	@param file:	an open file
 	@return: 		a dictionary(grammar) and a string (start_key) variable
 	'''
-	grammar = dict()
+	grammar = rdict()
 	start_key = ""
 
 	#convert each line of the file into a dictionary entry
@@ -53,7 +61,7 @@ def parse(file):
 		key = item[0].strip()
 		if not start_key:
 			start_key = key
-		if key not in gramar.keys():
+		if key not in grammar.keys():
 			grammar[key] = list()
 
 		# convert values, delimit by '|'
@@ -63,7 +71,7 @@ def parse(file):
 		# add values to grammar
 		for value in values:
 			value = value.strip()
-			grammar[key].append(value)
+			grammar.getList(key).append(value)
 
 	return (grammar, start_key)
 
@@ -71,16 +79,19 @@ def interpret(grammar, start_key):
 	'''
 	Takes a dictionary grammar and turns it into a string of Inform7 code
 
-	@param grammar: a dictionary grammar (should have start_key)
-	@return: 		a string to be placed in Inform7
+	@param grammar: 	a dictionary grammar
+	@paran start_key:	the key that begins the grammar
+	@return: 			a string to be placed in Inform7
 	'''
 	# initialize profile as the first line of the grammar
-	profile = grammar[start_key].copy()
+	profile = grammar[start_key][:]
 
 	# Loop until there are no more non-terminals
-	while re.search(NON_TERMINAL, profile)
+	while re.search(NON_TERMINAL, profile):
 		#likely needs mitches structure
-		t = Template(profile).substitute(grammar)
+		profile = Template(profile).substitute(grammar)
+
+	return profile
 
 def main():
 	'''
@@ -94,10 +105,10 @@ def main():
 	profiles = []
 
 	# parse arguments 
-	if len(sys.argv) < 2
+	if len(sys.argv) < 2:
 		print("No files provided. Looking for default, 'grammar.txt'")
 		files.append("grammar.txt")
-	else 
+	else: 
 		# add all arguments to list of files
 		for arg in sys.argv[1:]:
 			files.append(arg)
@@ -117,10 +128,12 @@ def main():
 		f.close()
 
 	# turn grammars into profiles
-	for grammar in grammars
+	for grammar in grammars:
 		profiles.append(interpret(grammar[0], grammar[1]))
 
 	# put profiles into and Inform7 file
-
+	for profile in profiles:
+		print(profile)
+		
 if __name__ == '__main__':
 	main()

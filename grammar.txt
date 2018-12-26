@@ -1,0 +1,2 @@
+test ::= wow this works! <random_item>
+random_item ::= item1 | item2 | item3
