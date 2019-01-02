@@ -7,17 +7,17 @@ from string import Template
 GRAMMAR_TERM = r"<\S*>"	# Regular Expression for terms in grammar
 NON_TERMINAL = r"\$\S*"	# Regular Expression for non_terminal in template form
 
-class rdict(dict):
+class gdict(dict):
     '''
     Modification of dictionary
 	- Allows the return of a random single item in a key list.
 	- Useful for random generation using string templates
     '''
     def __getitem__(self, key):
-        return random.choice(super(rdict, self).__getitem__(key))
+        return random.choice(super(gdict, self).__getitem__(key))
 
     def getList(self, key):
-        return super(rdict, self).__getitem__(key)
+        return super(gdict, self).__getitem__(key)
 
 def grammar_to_template(line):
 	'''
@@ -41,7 +41,7 @@ def parse(file):
 	@param file:	an open file
 	@return: 		a dictionary(grammar) and a string (start_key) variable
 	'''
-	grammar = rdict()
+	grammar = gdict()
 	start_key = ""
 
 	#convert each line of the file into a dictionary entry
@@ -134,6 +134,6 @@ def main():
 	# put profiles into and Inform7 file
 	for profile in profiles:
 		print(profile)
-		
+
 if __name__ == '__main__':
 	main()
