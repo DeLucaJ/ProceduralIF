@@ -34,6 +34,42 @@ def grammar_to_template(line):
 
 	return tline
 
+def read_declaration(file):
+	'''
+	Takes in a file and returns a declaration string from the grammar
+	Throws error when file is not properly formatted 
+	@param file: 	the file to be read
+	@return declaration: the string containing the declaration
+	'''
+	decl = ""
+
+	while (not decl.endswith("}")):
+		#read input
+		char = file.read(1)
+
+		if not char:
+			break
+
+		decl += char
+
+	return decl
+
+def read_declarations(file):
+	'''
+	Reads all the declarations in a file
+	@param file: the file to be read
+	@return declarations: a list of strings formatted as declarations
+	'''
+	decls = list()
+
+	while True:
+		decl = read_declaration(file)
+		if not decl:
+			break
+		decls.append(decl)
+
+	return decls
+
 def parse(file):
 	'''
 	Parses a file and outputs the grammar as a dictionary
@@ -44,19 +80,21 @@ def parse(file):
 	grammar = gdict()
 	start_key = ""
 
-	#convert each line of the file into a dictionary entry
-	lines = file.readlines()
+	# grab declarations and convert into grammar entry
+	decls = read_declarations(file)
 
-	for line in lines:
-		line = line.strip()
+	for decl in decls:
+		decl = decl.strip()
 
-		#should probably throw an error when true
-		if (len(line) < 3) or (line[0] == '#') or ("::=" not in line):
-			continue
+		# check format (could probably get more technical)
+		if (not decl.endswith("}")) or ("::=" not in decl):
+			print("Grammar improperly formatted", file=sys.stderr)
+			sys.exit(1)
 
-		item = line.split("::=")
+		# split key and values
+		item = decl.split("::=")
 
-		# add key to dictionary
+		# add key to grammar entry
 		# If its the first, make it the start_key
 		key = item[0].strip()
 		if not start_key:
@@ -65,9 +103,9 @@ def parse(file):
 			grammar[key] = list()
 
 		# convert values, delimit by '|'
-		values = grammar_to_template(item[1].strip())
+		values = grammar_to_template(item[1].strip('{}\t\n \r\v'))
 		values = values.split("|")
-		
+
 		# add values to grammar
 		for value in values:
 			value = value.strip()

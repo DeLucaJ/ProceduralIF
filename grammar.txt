@@ -1,2 +1,22 @@
-test ::= wow this works! <random_item>
-random_item ::= item1 | item2 | item3
+test ::= 
+{ 
+Inform7 code goes here
+<random_item>
+<random_item> 
+<random_item>
+}
+random_item ::= 
+{ 
+
+[some inform7 comment]
+
+| 
+
+"some inform7 string[some string rule]"
+
+| 
+
+some inform7 rule:
+	some rule code;
+
+}
