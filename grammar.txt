@@ -1,10 +1,12 @@
 test ::= 
 { 
-Inform7 code goes here
+Section 0 - Profile 0
+
 <random_item>
 <random_item> 
 <random_item>
 }
+
 random_item ::= 
 { 
 
