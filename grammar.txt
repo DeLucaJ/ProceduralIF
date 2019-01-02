@@ -1,6 +1,6 @@
 test ::= 
 { 
-Section 0 - Profile 0
+Chapter 0 - Profile 0
 
 <random_item>
 <random_item> 

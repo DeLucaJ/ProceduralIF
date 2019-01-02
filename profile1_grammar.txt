@@ -1,4 +1,4 @@
 profile ::=
 {
-Section 1 - Profile 1
+Chapter 1 - Profile 1
 }
