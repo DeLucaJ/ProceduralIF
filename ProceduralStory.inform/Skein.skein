@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-395">
+  <generator>Windows Inform 7 6M62</generator>
+  <activeNode nodeId="node-409"/>
+  <item nodeId="node-395">
+    <command xml:space="preserve">ProceduralStory</command>
+    <result xml:space="preserve">Please answer the following yes/no questions.&#x000A;&#x000A;Did you usually help the Koroks?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-396"/>
+      <child nodeId="node-397"/>
+      <child nodeId="node-398"/>
+      <child nodeId="node-403"/>
+    </children>
+  </item>
+  <item nodeId="node-396">
+    <command xml:space="preserve">scene</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-397">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Atrium&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-398">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Attic&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-399"/>
+    </children>
+  </item>
+  <item nodeId="node-399">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Atrium&#x000A;You can see Joe here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-400"/>
+    </children>
+  </item>
+  <item nodeId="node-400">
+    <command xml:space="preserve">hello joe</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-401"/>
+    </children>
+  </item>
+  <item nodeId="node-401">
+    <command xml:space="preserve">greet joe</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-402"/>
+    </children>
+  </item>
+  <item nodeId="node-402">
+    <command xml:space="preserve">fight joe</command>
+    <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-403">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-404"/>
+    </children>
+  </item>
+  <item nodeId="node-404">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you ride a bear?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-405"/>
+      <child nodeId="node-407"/>
+    </children>
+  </item>
+  <item nodeId="node-405">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-406"/>
+    </children>
+  </item>
+  <item nodeId="node-406">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190102 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;castle&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-407">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-408"/>
+    </children>
+  </item>
+  <item nodeId="node-408">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-409"/>
+    </children>
+  </item>
+  <item nodeId="node-409">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190102 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Sanctum&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+</Skein>

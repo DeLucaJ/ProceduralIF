@@ -1,4 +1,6 @@
 profile ::=
 {
 Chapter 6 - Profile 6
+
+[end of Profile 6]
 }

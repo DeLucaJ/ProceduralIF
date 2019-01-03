@@ -1,31 +1,13 @@
-profile ::=
-{
 "ProceduralStory" by Joe DeLuca
 
 Chapter 0 - Setup
 
 Section 1 - Assets
 
-<assets>
+[Monsters, Items, and More]
 
 Section 2 - The Map
 
-<map>
-
-Section 3 - Initial Questions
-
-<questions>
-
-[End of Setup]
-}
-
-assets ::= 
-{
-[Monsters, Items, and More]
-}
-
-map ::= 
-{
 [The Playing Map]
 Hyrule Castle is a region.
 
@@ -43,10 +25,9 @@ The Guard's Chamber is west of the Dining Hall.
 The Library is north of the Dining Hall. 
 The Lockup is west of the Study. 
 The Sanctum is west of the Library.
-}
 
-questions ::=
-{
+Section 3 - Initial Questions
+
 [The Beginning]
 When play begins:
 	let Q1 be 0; 
@@ -55,16 +36,16 @@ When play begins:
 	let Q4 be 0;
 	say "Please answer the following yes/no questions.[line break][line break]";
 	[Question 1]
-	say <question1>;
+	say "Did you usually help the Koroks?";
 	if the player consents, now Q1 is 1; 
 	[Question 2]
-	say <question2>;
+	say "Did you revive your horse when it died?";
 	if the player consents, now Q2 is 10;
 	[Question 3]
-	say <question3>; 
+	say "Did you ride a bear?"; 
 	if the player consents, now Q3 is 100;
 	[Question 4]
-	say <question4>;
+	say "Did you defeat the Calamity?";
 	if the player consents, now Q4 is 1000;
 	[Select Profile] 
 	let P be Q1 + Q2 + Q3 + Q4;
@@ -85,9 +66,29 @@ When play begins:
 		-- 1101: say "Selecting Profile 14";
 		-- 1110: say "Selecting Profile 15";
 		-- 1111: say "Selecting Profile 16";
-}
 
-question1 ::= { "Did you usually help the Koroks?" }
-question2 ::= { "Did you revive your horse when it died?" }
-question3 ::= { "Did you ride a bear?" }
-question4 ::= { "Did you defeat the Calamity?" }
+[End of Setup]
+Chapter 1 - Profile 1
+
+[end of Profile 1]
+Chapter 2 - Profile 2
+
+[end of Profile 2]
+Chapter 3 - Profile 3
+
+[end of Profile 3]
+Chapter 4 - Profile 4
+
+[end of Profile 4]
+Chapter 5 - Profile 5
+
+[end of Profile 5]
+Chapter 6 - Profile 6
+
+[end of Profile 6]
+Chapter 7 - Profile 7
+
+[end of Profile 1]
+Chapter 8 - Profile 8
+
+[end of Profile 8]
