@@ -32,22 +32,33 @@ Hyrule Castle is a region.
 [Rooms]
 The Sanctum is a room in Hyrule Castle.
 The Study is a room in Hyrule Castle.
-The Guard's Chamber is a room in Hyrule Castle.
+The Guard Chamber is a room in Hyrule Castle.
 The Dining Hall is a room in Hyrule Castle.
 The Library is a room in Hyrule Castle.
 The Lockup is a room in Hyrule Castle. 
+The Healing Spring is a room in Hyrule Castle.
+The Armory is a room in Hyrule Castle.
+The King's Chamber is a room in Hyrule Castle.
+The Courtyard is a room in Hyrule Castle. 
 
 [Connections]
-The Study is north of the Guard's Chamber.
-The Guard's Chamber is west of the Dining Hall.
+The Study is north of the Guard Chamber.
+The Guard Chamber is west of the Dining Hall.
 The Library is north of the Dining Hall. 
 The Lockup is west of the Study. 
-The Sanctum is west of the Library.
+The Boss Door is south of the Sanctum and north of the Courtyard. The Boss Door is a door. The Boss Door is lockable and locked. 
+The Spring Door is east of the Healing Spring and west of the Guard Chamber. The Spring Door is a door. 
+The Armory is south from the Courtyard. 
+The King's Chamber is north from the Library.
+The Courtyard is east from the Study and west from the Library. 
 }
 
 questions ::=
 {
 [The Beginning]
+
+Profile is a number which varies. Profile is 0. 
+
 When play begins:
 	let Q1 be 0; 
 	let Q2 be 0; 
@@ -69,22 +80,56 @@ When play begins:
 	[Select Profile] 
 	let P be Q1 + Q2 + Q3 + Q4;
 	if P is:
-		-- 0000: say "Selecting Profile 1";
-		-- 0001: say "Selecting Profile 2";
-		-- 0010: say "Selecting Profile 3";
-		-- 0011: say "Selecting Profile 4";
-		-- 0100: say "Selecting Profile 5";
-		-- 0101: say "Selecting Profile 6";
-		-- 0110: say "Selecting Profile 7";
-		-- 0111: say "Selecting Profile 8";
-		-- 1000: say "Selecting Profile 9";
-		-- 1001: say "Selecting Profile 10";
-		-- 1010: say "Selecting Profile 11";
-		-- 1011: say "Selecting Profile 12";
-		-- 1100: say "Selecting Profile 13";
-		-- 1101: say "Selecting Profile 14";
-		-- 1110: say "Selecting Profile 15";
-		-- 1111: say "Selecting Profile 16";
+		-- 0000:
+			say "Selecting Profile 1";
+			now Profile is 1;
+		-- 0001: 
+			say "Selecting Profile 2";
+			now Profile is 2;
+		-- 0010: 
+			say "Selecting Profile 3";
+			now Profile is 3;
+		-- 0011: 
+			say "Selecting Profile 4";
+			now Profile is 4;
+		-- 0100: 
+			say "Selecting Profile 5";
+			now Profile is 5;
+		-- 0101: 
+			say "Selecting Profile 6";
+			now Profile is 6;
+		-- 0110: 
+			say "Selecting Profile 7";
+			now Profile is 7;
+		-- 0111: 
+			say "Selecting Profile 8";
+			now Profile is 8;
+		-- 1000: 
+			say "Selecting Profile 9";
+			now Profile is 9;
+		-- 1001: 
+			say "Selecting Profile 10";
+			now Profile is 10;
+		-- 1010: 
+			say "Selecting Profile 11";
+			now Profile is 11;
+		-- 1011: 
+			say "Selecting Profile 12";
+			now Profile is 12;
+		-- 1100: 
+			say "Selecting Profile 13";
+			now Profile is 13;
+		-- 1101: 
+			say "Selecting Profile 14";
+			now Profile is 14;
+		-- 1110: 
+			say "Selecting Profile 15";
+			now Profile is 15;
+		-- 1111: 
+			say "Selecting Profile 16";
+			now Profile is 16;
+
+The player is in the Lockup.
 }
 
 question1 ::= { "Did you usually help the Koroks?" }

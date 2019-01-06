@@ -2,5 +2,10 @@ profile ::=
 {
 Chapter 3 - Profile 3
 
+Profile3 is a scene. Profile3 begins when Profile is 3. 
+
+When Profile3 begins:
+	say "Beginning Profile 3";
+
 [end of Profile 3]
 }
