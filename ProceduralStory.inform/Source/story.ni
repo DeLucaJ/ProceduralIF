@@ -12,25 +12,27 @@ Section 2 - The Map
 Hyrule Castle is a region.
 
 [Characters and Monsters]
+A chair is a kind of supporter. A chair is enterable and portable. 
+A cell is a kind of container. A cell is enterable, openable, transparent, lockable, locked, and closed. 
 
 [Rooms]
-The Sanctum is a room in Hyrule Castle. The Throne is in here. The Master Sword is in here. 
+The Sanctum is a room in Hyrule Castle. The Throne is in the Sanctum. The Master Sword is in the Sanctum. 
 
-The Study is a room in Hyrule Castle. A desk is in here. A note is on the desk. A pen is on the desk. A chair is in the room. 
+The Study is a room in Hyrule Castle. A desk is in the Study. A note is on the desk. A pen is on the desk. A wooden chair is in the Study. It is a chair.
 
-The Guard Chamber is a room in Hyrule Castle. A metal chair is in here. A metal table is in here. A keyhook is in here. The keyhook is fixed in place. The guard key is on the keyhook. 
+The Guard Chamber is a room in Hyrule Castle. A metal chair is in the Guard Chamber. It is a chair. A metal table is in the Guard Chamber. A keyhook is in Guard Chamber. The keyhook is fixed in place. The guard key is on the keyhook. 
 
-The Dining Hall is a room in Hyrule Castle. A dining table is in here. There are eight chairs in here. A bowl of fruit is on the dining table. There are eight plates on the dining table. There are eight forks on the dining table. There are eight spoons on the dining table. There are eight kinives on the dining table. 
+The Dining Hall is a room in Hyrule Castle. A dining table is in the Dining Hall. There are eight chairs in the DIning hall. A bowl of fruit is on the dining table. 
 
-The Library is a room in Hyrule Castle. A large bookshelf is in the library. There are 100 books on the bookshelf. There is a blue book on the bookshelf. The king's key is in the blue book. There is a plush chair in the room. There is a fireplace in the room. 
+The Library is a room in Hyrule Castle. A large bookshelf is in the library. [There are 100 books on the bookshelf.] There is a blue book on the bookshelf. The blue book is closed. The king's key is in the blue book. There is a plush chair in the Library. It is a chair. There is a fireplace in the Library. 
 
-The Lockup is a room in Hyrule Castle. Farore's Pearl is in there. 
+The Lockup is a room in Hyrule Castle. There are four cells in the Lockup. There is a big cell in the Lockup. The big cell is a cell.  Farore's pearl is in the big cell. 
 
-The Healing Spring is a room in Hyrule Castle.
+The Healing Spring is a room in Hyrule Castle. There is a bath in the Healing Spring. The bath is an enterable container. 
 
-The Armory is a room in Hyrule Castle. Din's Pearl is in there. 
+The Armory is a room in Hyrule Castle. Din's Pearl is in the Armory.
 
-The King's Chamber is a room in Hyrule Castle. Naryu's Pearl is in there. 
+The King's Chamber is a room in Hyrule Castle. Naryu's Pearl is in the King's Chamber. 
 
 The Courtyard is a room in Hyrule Castle. 
 

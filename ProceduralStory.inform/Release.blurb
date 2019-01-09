@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6M62
 
-status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Git\csc\570\ProceduralIF\ProceduralStory.inform\Build\StatusCblorb.html"
+status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "D:\Git\csc\570\ProceduralIF\ProceduralStory.inform\Build\StatusCblorb.html"
 
 
 ! Identification
 
-project folder "C:\Git\csc\570\ProceduralIF\ProceduralStory.inform"
-release to "C:\Git\csc\570\ProceduralIF\ProceduralStory.materials\Release"
+project folder "D:\Git\csc\570\ProceduralIF\ProceduralStory.inform"
+release to "D:\Git\csc\570\ProceduralIF\ProceduralStory.materials\Release"
 
 ! Blorb instructions
 
 storyfile leafname "ProceduralStory.gblorb"
-storyfile "C:\Git\csc\570\ProceduralIF\ProceduralStory.inform\Build\output.ulx" include
-ifiction "C:\Git\csc\570\ProceduralIF\ProceduralStory.inform\Metadata.iFiction" include
+storyfile "D:\Git\csc\570\ProceduralIF\ProceduralStory.inform\Build\output.ulx" include
+ifiction "D:\Git\csc\570\ProceduralIF\ProceduralStory.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 
