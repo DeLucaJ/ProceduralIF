@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-39"/>
+  <activeNode nodeId="node-69"/>
   <item nodeId="node-1">
     <command xml:space="preserve">ProceduralStory</command>
     <result xml:space="preserve">Please answer the following yes/no questions.&#x000A;&#x000A;Did you usually help the Koroks?</result>
@@ -12,8 +12,10 @@
       <child nodeId="node-3"/>
       <child nodeId="node-4"/>
       <child nodeId="node-9"/>
-      <child nodeId="node-16"/>
-      <child nodeId="node-24"/>
+      <child nodeId="node-22"/>
+      <child nodeId="node-30"/>
+      <child nodeId="node-44"/>
+      <child nodeId="node-49"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -77,7 +79,8 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-10"/>
-      <child nodeId="node-36"/>
+      <child nodeId="node-18"/>
+      <child nodeId="node-55"/>
     </children>
   </item>
   <item nodeId="node-10">
@@ -87,7 +90,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-11"/>
-      <child nodeId="node-13"/>
+      <child nodeId="node-15"/>
     </children>
   </item>
   <item nodeId="node-11">
@@ -101,84 +104,49 @@
   </item>
   <item nodeId="node-12">
     <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190102 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;castle&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190107 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-13"/>
+      <child nodeId="node-14"/>
+    </children>
+  </item>
+  <item nodeId="node-13">
+    <command xml:space="preserve">wake up</command>
+    <result xml:space="preserve">The dreadful truth is, this is not a dream.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-13">
+  <item nodeId="node-14">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-15">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">Please answer yes or no.&gt;</result>
     <commentary xml:space="preserve">Please answer yes or no.&gt;</commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-14"/>
+      <child nodeId="node-16"/>
     </children>
   </item>
-  <item nodeId="node-14">
+  <item nodeId="node-16">
     <command xml:space="preserve">y</command>
     <result xml:space="preserve">Did you defeat the Calamity?</result>
     <commentary xml:space="preserve">Did you defeat the Calamity?</commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-15"/>
-    </children>
-  </item>
-  <item nodeId="node-15">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190102 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Sanctum&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190102 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Sanctum&#x000A;&#x000A;&gt;</commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-36">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you ride a bear?</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-37"/>
-    </children>
-  </item>
-  <item nodeId="node-37">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Did you defeat the Calamity?</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-38"/>
-    </children>
-  </item>
-  <item nodeId="node-38">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Selecting Profile 14&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190106 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Lockup&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-39"/>
-    </children>
-  </item>
-  <item nodeId="node-39">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile 14&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-16">
-    <command xml:space="preserve">0</command>
-    <result xml:space="preserve">Please answer yes or no.&gt;</result>
-    <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-17"/>
     </children>
   </item>
   <item nodeId="node-17">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you revive your horse when it died?</result>
-    <commentary xml:space="preserve"></commentary>
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190102 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Sanctum&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190102 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Sanctum&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-18"/>
-    </children>
   </item>
   <item nodeId="node-18">
     <command xml:space="preserve">n</command>
@@ -190,7 +158,7 @@
     </children>
   </item>
   <item nodeId="node-19">
-    <command xml:space="preserve">n</command>
+    <command xml:space="preserve">y</command>
     <result xml:space="preserve">Did you defeat the Calamity?</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
@@ -199,8 +167,8 @@
     </children>
   </item>
   <item nodeId="node-20">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Selecting Profile 1&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190106 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Sanctum&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 14&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190106 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Lockup&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -208,17 +176,146 @@
     </children>
   </item>
   <item nodeId="node-21">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile 14&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-55">
     <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-22"/>
+      <child nodeId="node-56"/>
     </children>
   </item>
-  <item nodeId="node-22">
+  <item nodeId="node-56">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you ride a bear?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-57"/>
+    </children>
+  </item>
+  <item nodeId="node-57">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-58"/>
+    </children>
+  </item>
+  <item nodeId="node-58">
     <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-59"/>
+    </children>
+  </item>
+  <item nodeId="node-59">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-60"/>
+    </children>
+  </item>
+  <item nodeId="node-60">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190108 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-61"/>
+    </children>
+  </item>
+  <item nodeId="node-61">
+    <command xml:space="preserve">go through armory door</command>
+    <result xml:space="preserve">(first opening the Armory Door)&#x000A;It seems to be locked.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-62"/>
+    </children>
+  </item>
+  <item nodeId="node-62">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door and a guard key here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-63"/>
+    </children>
+  </item>
+  <item nodeId="node-63">
+    <command xml:space="preserve">take guard key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-64"/>
+    </children>
+  </item>
+  <item nodeId="node-64">
+    <command xml:space="preserve">go right</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-65"/>
+    </children>
+  </item>
+  <item nodeId="node-65">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-66"/>
+    </children>
+  </item>
+  <item nodeId="node-66">
+    <command xml:space="preserve">open armory door</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-67"/>
+    </children>
+  </item>
+  <item nodeId="node-67">
+    <command xml:space="preserve">unlock armory door</command>
+    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the Armory Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-68"/>
+    </children>
+  </item>
+  <item nodeId="node-68">
+    <command xml:space="preserve">examine guard key</command>
+    <result xml:space="preserve">You see nothing special about the guard key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-69"/>
+    </children>
+  </item>
+  <item nodeId="node-69">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the Armory Door)&#x000A;&#x000A;Armory&#x000A;You can see an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-22">
+    <command xml:space="preserve">0</command>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -226,14 +323,17 @@
     </children>
   </item>
   <item nodeId="node-23">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Did you revive your horse when it died?</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-24"/>
+    </children>
   </item>
   <item nodeId="node-24">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <result xml:space="preserve">Did you ride a bear?</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -242,7 +342,7 @@
   </item>
   <item nodeId="node-25">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you ride a bear?</result>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -251,7 +351,7 @@
   </item>
   <item nodeId="node-26">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <result xml:space="preserve">Selecting Profile 1&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190106 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Sanctum&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -259,35 +359,32 @@
     </children>
   </item>
   <item nodeId="node-27">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Selecting Profile 1&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190106 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Lockup&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-28"/>
-      <child nodeId="node-29"/>
-      <child nodeId="node-32"/>
-      <child nodeId="node-33"/>
     </children>
   </item>
   <item nodeId="node-28">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-29"/>
+    </children>
+  </item>
+  <item nodeId="node-29">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-29">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-30"/>
-    </children>
-  </item>
   <item nodeId="node-30">
-    <command xml:space="preserve">ls</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Did you revive your horse when it died?</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -295,36 +392,199 @@
     </children>
   </item>
   <item nodeId="node-31">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Did you ride a bear?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-32"/>
+    </children>
+  </item>
+  <item nodeId="node-32">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-33"/>
+    </children>
+  </item>
+  <item nodeId="node-33">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Selecting Profile 1&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190107 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Lockup&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-34"/>
+      <child nodeId="node-35"/>
+      <child nodeId="node-38"/>
+      <child nodeId="node-39"/>
+      <child nodeId="node-42"/>
+    </children>
+  </item>
+  <item nodeId="node-34">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-35">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-36"/>
+    </children>
+  </item>
+  <item nodeId="node-36">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-37"/>
+    </children>
+  </item>
+  <item nodeId="node-37">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Sanctum&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-32">
+  <item nodeId="node-38">
     <command xml:space="preserve">go west</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-33">
+  <item nodeId="node-39">
     <command xml:space="preserve">go east</command>
     <result xml:space="preserve">Study&#x000A;Beginning Profile1&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-34"/>
-      <child nodeId="node-35"/>
+      <child nodeId="node-40"/>
+      <child nodeId="node-41"/>
     </children>
   </item>
-  <item nodeId="node-34">
+  <item nodeId="node-40">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Study&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-35">
+  <item nodeId="node-41">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-42">
+    <command xml:space="preserve">sleep</command>
+    <result xml:space="preserve">You aren't feeling especially drowsy.&#x000A;&#x000A;Beginning Profile 1&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-43"/>
+    </children>
+  </item>
+  <item nodeId="node-43">
+    <command xml:space="preserve">wake up</command>
+    <result xml:space="preserve">The dreadful truth is, this is not a dream.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-44">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-45"/>
+    </children>
+  </item>
+  <item nodeId="node-45">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">Did you ride a bear?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-46"/>
+    </children>
+  </item>
+  <item nodeId="node-46">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-47"/>
+    </children>
+  </item>
+  <item nodeId="node-47">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">Selecting Profile 1&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190107 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-48"/>
+    </children>
+  </item>
+  <item nodeId="node-48">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile 1&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-49">
+    <command xml:space="preserve">ye</command>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-50"/>
+    </children>
+  </item>
+  <item nodeId="node-50">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-51"/>
+    </children>
+  </item>
+  <item nodeId="node-51">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you ride a bear?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-52"/>
+    </children>
+  </item>
+  <item nodeId="node-52">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-53"/>
+    </children>
+  </item>
+  <item nodeId="node-53">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190107 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-54"/>
+    </children>
+  </item>
+  <item nodeId="node-54">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

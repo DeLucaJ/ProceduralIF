@@ -11,34 +11,53 @@ Section 2 - The Map
 [The Playing Map]
 Hyrule Castle is a region.
 
+[Characters and Monsters]
+
 [Rooms]
-The Sanctum is a room in Hyrule Castle.
-The Study is a room in Hyrule Castle.
-The Guard Chamber is a room in Hyrule Castle.
-The Dining Hall is a room in Hyrule Castle.
-The Library is a room in Hyrule Castle.
-The Lockup is a room in Hyrule Castle. 
+The Sanctum is a room in Hyrule Castle. The Throne is in here. The Master Sword is in here. 
+
+The Study is a room in Hyrule Castle. A desk is in here. A note is on the desk. A pen is on the desk. A chair is in the room. 
+
+The Guard Chamber is a room in Hyrule Castle. A metal chair is in here. A metal table is in here. A keyhook is in here. The keyhook is fixed in place. The guard key is on the keyhook. 
+
+The Dining Hall is a room in Hyrule Castle. A dining table is in here. There are eight chairs in here. A bowl of fruit is on the dining table. There are eight plates on the dining table. There are eight forks on the dining table. There are eight spoons on the dining table. There are eight kinives on the dining table. 
+
+The Library is a room in Hyrule Castle. A large bookshelf is in the library. There are 100 books on the bookshelf. There is a blue book on the bookshelf. The king's key is in the blue book. There is a plush chair in the room. There is a fireplace in the room. 
+
+The Lockup is a room in Hyrule Castle. Farore's Pearl is in there. 
+
 The Healing Spring is a room in Hyrule Castle.
-The Armory is a room in Hyrule Castle.
-The King's Chamber is a room in Hyrule Castle.
+
+The Armory is a room in Hyrule Castle. Din's Pearl is in there. 
+
+The King's Chamber is a room in Hyrule Castle. Naryu's Pearl is in there. 
+
 The Courtyard is a room in Hyrule Castle. 
 
+[Item rules and properties]
+The guard key unlocks the Lockup Door and the Armory Door. 
+The king's key unlocks the King Door. 
+The korok key unlocks the Korok Door. 
+
 [Connections]
-The Study is north of the Guard Chamber.
-The Guard Chamber is west of the Dining Hall.
-The Library is north of the Dining Hall. 
-The Lockup is west of the Study. 
+The Study is south of the Library.
+The Study is east of the Dining Hall.
+The Library is north of the Study. 
+The Dining Hall is south of the Guard Chamber.
 The Boss Door is south of the Sanctum and north of the Courtyard. The Boss Door is a door. The Boss Door is lockable and locked. 
-The Spring Door is east of the Healing Spring and west of the Guard Chamber. The Spring Door is a door. 
-The Armory is south from the Courtyard. 
-The King's Chamber is north from the Library.
-The Courtyard is east from the Study and west from the Library.
+The Korok Door is east of the Healing Spring and west of the Dining Hall. The Korok Door is a door. The Korok Door is lockable and locked. [The Korok Door has matching key the korok key. ]
+The Lockup Door is east of the Lockup and west of the Guard Chamber. The Lockup Door is a door. The Lockup Door is lockable and locked. [The Lockup Door has the matching key the guard key. ]
+The King Door is south of the King's Chamber and north of the Library. The King Door is a door. The King Door is lockable and locked. [The King Door has the matching key king's key. ]
+The Armory Door is south of the Courtyard and north of the Armory. The Armory Door is a door. The Armory door is lockable and locked. [The Armory Door has matching key the guard key. ]
+The Courtyard is east from the Guard Chamber and west from the Library.
 
 Section 3 - Initial Questions
 
 [The Beginning]
 
 Profile is a number which varies. Profile is 0. 
+
+[INTRODUCTION PASSAGE]
 
 When play begins:
 	let Q1 be 0; 
@@ -110,7 +129,12 @@ When play begins:
 			say "Selecting Profile 16";
 			now Profile is 16;
 
-The player is in the Lockup.
+When play begins:
+	try waiting;
+
+The player is in the Courtyard.
+
+[AFTER QUESTIONS PASSAGE]
 
 [End of Setup]
 Chapter 1 - Profile 1
