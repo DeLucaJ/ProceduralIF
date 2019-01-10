@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-152"/>
+  <activeNode nodeId="node-710"/>
   <item nodeId="node-1">
     <command xml:space="preserve">ProceduralStory</command>
     <result xml:space="preserve">Please answer the following yes/no questions.&#x000A;&#x000A;Did you usually help the Koroks?</result>
@@ -12,10 +12,10 @@
       <child nodeId="node-3"/>
       <child nodeId="node-4"/>
       <child nodeId="node-9"/>
-      <child nodeId="node-37"/>
-      <child nodeId="node-45"/>
-      <child nodeId="node-59"/>
-      <child nodeId="node-64"/>
+      <child nodeId="node-116"/>
+      <child nodeId="node-124"/>
+      <child nodeId="node-142"/>
+      <child nodeId="node-147"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -79,8 +79,8 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-10"/>
-      <child nodeId="node-18"/>
-      <child nodeId="node-22"/>
+      <child nodeId="node-97"/>
+      <child nodeId="node-101"/>
     </children>
   </item>
   <item nodeId="node-10">
@@ -90,7 +90,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-11"/>
-      <child nodeId="node-15"/>
+      <child nodeId="node-87"/>
     </children>
   </item>
   <item nodeId="node-11">
@@ -100,20 +100,22 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-12"/>
+      <child nodeId="node-695"/>
     </children>
   </item>
   <item nodeId="node-12">
     <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Selecting Profile 16&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190108 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190109 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door, an Armory Door, a statue of Din, a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-13"/>
       <child nodeId="node-14"/>
-      <child nodeId="node-70"/>
-      <child nodeId="node-75"/>
-      <child nodeId="node-105"/>
-      <child nodeId="node-120"/>
+      <child nodeId="node-15"/>
+      <child nodeId="node-20"/>
+      <child nodeId="node-41"/>
+      <child nodeId="node-80"/>
+      <child nodeId="node-693"/>
     </children>
   </item>
   <item nodeId="node-13">
@@ -128,720 +130,36 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-70">
+  <item nodeId="node-15">
     <command xml:space="preserve">go east</command>
     <result xml:space="preserve">Library&#x000A;You can see a King Door, a large bookshelf (on which is a blue book (closed)), a plush chair and a fireplace here.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
-      <child nodeId="node-71"/>
-    </children>
-  </item>
-  <item nodeId="node-71">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">Study&#x000A;You can see a desk (on which are a note and a pen) and a chair here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-72"/>
-    </children>
-  </item>
-  <item nodeId="node-72">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door and a dining table (on which are a bowl of fruit, eight plates, eight forks, eight spoons and eight kinives) here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-73"/>
-    </children>
-  </item>
-  <item nodeId="node-73">
-    <command xml:space="preserve">examine dining table</command>
-    <result xml:space="preserve">On the dining table are a bowl of fruit, eight plates, eight forks, eight spoons and eight kinives.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-74"/>
-    </children>
-  </item>
-  <item nodeId="node-74">
-    <command xml:space="preserve">take chair</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-75">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-76"/>
-    </children>
-  </item>
-  <item nodeId="node-76">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-77"/>
-    </children>
-  </item>
-  <item nodeId="node-77">
-    <command xml:space="preserve">go east </command>
-    <result xml:space="preserve">Library&#x000A;You can see a King Door and a large bookshelf (on which are 100 books and a blue book (in which is a king's key)) here.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-78"/>
-    </children>
-  </item>
-  <item nodeId="node-78">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">Study&#x000A;You can see a desk (on which are a note and a pen) and a chair here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-79"/>
-    </children>
-  </item>
-  <item nodeId="node-79">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door, a dining table (on which are a bowl of fruit, 8 plates, eight forks, 8 spoons and 8 kinives) and 8 chairs here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-80"/>
-    </children>
-  </item>
-  <item nodeId="node-80">
-    <command xml:space="preserve">take plate</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-81"/>
-    </children>
-  </item>
-  <item nodeId="node-81">
-    <command xml:space="preserve">take a plate</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-82"/>
-    </children>
-  </item>
-  <item nodeId="node-82">
-    <command xml:space="preserve">examine dining table</command>
-    <result xml:space="preserve">On the dining table are a bowl of fruit, 8 plates, eight forks, 8 spoons and 8 kinives.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-83"/>
-    </children>
-  </item>
-  <item nodeId="node-83">
-    <command xml:space="preserve">take bowl of fruit</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-84"/>
-    </children>
-  </item>
-  <item nodeId="node-84">
-    <command xml:space="preserve">take 8 plates</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-85"/>
-    </children>
-  </item>
-  <item nodeId="node-85">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  8 plates&#x000A;  a bowl of fruit&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-86"/>
-    </children>
-  </item>
-  <item nodeId="node-86">
-    <command xml:space="preserve">drop plate</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-87"/>
-    </children>
-  </item>
-  <item nodeId="node-87">
-    <command xml:space="preserve">drop plates</command>
-    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-88"/>
-    </children>
-  </item>
-  <item nodeId="node-88">
-    <command xml:space="preserve">examine</command>
-    <result xml:space="preserve">(the bowl of fruit)&#x000A;You see nothing special about the bowl of fruit.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-89"/>
-    </children>
-  </item>
-  <item nodeId="node-89">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Dining Hall&#x000A;You can see 8 plates, a Korok Door, a dining table (on which are eight forks, 8 spoons and 8 kinives) and 8 chairs here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-90"/>
-    </children>
-  </item>
-  <item nodeId="node-90">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Study&#x000A;You can see a desk (on which are a note and a pen) and a chair here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-91"/>
-    </children>
-  </item>
-  <item nodeId="node-91">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Library&#x000A;You can see a King Door and a large bookshelf (on which are 100 books and a blue book (in which is a king's key)) here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-92"/>
-    </children>
-  </item>
-  <item nodeId="node-92">
-    <command xml:space="preserve">take book</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-93"/>
-    </children>
-  </item>
-  <item nodeId="node-93">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a blue book&#x000A;    a king's key&#x000A;  a bowl of fruit&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-94"/>
-    </children>
-  </item>
-  <item nodeId="node-94">
-    <command xml:space="preserve">take a book</command>
-    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-95"/>
-    </children>
-  </item>
-  <item nodeId="node-95">
-    <command xml:space="preserve">take 100 books</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-105">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is a guard key) here.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-106"/>
-      <child nodeId="node-127"/>
-      <child nodeId="node-137"/>
-      <child nodeId="node-149"/>
-    </children>
-  </item>
-  <item nodeId="node-106">
-    <command xml:space="preserve">sit on chair</command>
-    <result xml:space="preserve">You get onto the metal chair.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-107"/>
-      <child nodeId="node-112"/>
-      <child nodeId="node-114"/>
-    </children>
-  </item>
-  <item nodeId="node-107">
-    <command xml:space="preserve">sit on table</command>
-    <result xml:space="preserve">That's not something you can sit down on.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-108"/>
-    </children>
-  </item>
-  <item nodeId="node-108">
-    <command xml:space="preserve">sit on metal chair</command>
-    <result xml:space="preserve">That's not something you can sit down on.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-109"/>
-    </children>
-  </item>
-  <item nodeId="node-109">
-    <command xml:space="preserve">sit on metal table</command>
-    <result xml:space="preserve">That's not something you can sit down on.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-112">
-    <command xml:space="preserve">enter chair</command>
-    <result xml:space="preserve">That's not something you can enter.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-113"/>
-    </children>
-  </item>
-  <item nodeId="node-113">
-    <command xml:space="preserve">fuck</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-114">
-    <command xml:space="preserve">exit chair</command>
-    <result xml:space="preserve">I only understood you as far as wanting to exit.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-115"/>
-    </children>
-  </item>
-  <item nodeId="node-115">
-    <command xml:space="preserve">exit metal chair</command>
-    <result xml:space="preserve">I only understood you as far as wanting to exit.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-116"/>
-    </children>
-  </item>
-  <item nodeId="node-116">
-    <command xml:space="preserve">stand</command>
-    <result xml:space="preserve">You get off the metal chair.&#x000A;&#x000A;Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is a guard key) here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-117"/>
-    </children>
-  </item>
-  <item nodeId="node-117">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door, a dining table (on which is a bowl of fruit) and eight wooden chairs here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-118"/>
-    </children>
-  </item>
-  <item nodeId="node-118">
-    <command xml:space="preserve">sit on a wooden chair</command>
-    <result xml:space="preserve">I only understood you as far as wanting to sit on eight wooden chairs.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-119"/>
-    </children>
-  </item>
-  <item nodeId="node-119">
-    <command xml:space="preserve">sit on chair</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-127">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door, a dining table (on which is a bowl of fruit) and eight chairs here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-128"/>
-    </children>
-  </item>
-  <item nodeId="node-128">
-    <command xml:space="preserve">take a chiar</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-129"/>
-    </children>
-  </item>
-  <item nodeId="node-129">
-    <command xml:space="preserve">take a chair</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-130"/>
-    </children>
-  </item>
-  <item nodeId="node-130">
-    <command xml:space="preserve">take chair</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-131"/>
-    </children>
-  </item>
-  <item nodeId="node-131">
-    <command xml:space="preserve">take chair </command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-132"/>
-    </children>
-  </item>
-  <item nodeId="node-132">
-    <command xml:space="preserve">take chair </command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-133"/>
-    </children>
-  </item>
-  <item nodeId="node-133">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door, a dining table (on which is a bowl of fruit) and four chairs here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-134"/>
-    </children>
-  </item>
-  <item nodeId="node-134">
-    <command xml:space="preserve">stuff</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-135"/>
-    </children>
-  </item>
-  <item nodeId="node-135">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  four chairs&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-136"/>
-    </children>
-  </item>
-  <item nodeId="node-136">
-    <command xml:space="preserve">drop chairs</command>
-    <result xml:space="preserve">chair: Dropped.&#x000A;chair: Dropped.&#x000A;chair: Dropped.&#x000A;chair: Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-137">
-    <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-138"/>
-    </children>
-  </item>
-  <item nodeId="node-138">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">(first opening the Lockup Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-139"/>
-    </children>
-  </item>
-  <item nodeId="node-139">
-    <command xml:space="preserve">unlock door</command>
-    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the Lockup Door.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-140"/>
-    </children>
-  </item>
-  <item nodeId="node-140">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">(first opening the Lockup Door)&#x000A;&#x000A;Lockup&#x000A;You can see a Lockup Door and four cells (closed and empty) here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-141"/>
-    </children>
-  </item>
-  <item nodeId="node-141">
-    <command xml:space="preserve">check cages</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-142"/>
-    </children>
-  </item>
-  <item nodeId="node-142">
-    <command xml:space="preserve">take cell</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-143"/>
-    </children>
-  </item>
-  <item nodeId="node-143">
-    <command xml:space="preserve">drop cell</command>
-    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-144"/>
-    </children>
-  </item>
-  <item nodeId="node-144">
-    <command xml:space="preserve">enter a cell</command>
-    <result xml:space="preserve">You can't get into the closed cell.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-145"/>
-    </children>
-  </item>
-  <item nodeId="node-145">
-    <command xml:space="preserve">open cells</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-146"/>
-    </children>
-  </item>
-  <item nodeId="node-146">
-    <command xml:space="preserve">open all cells</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-147"/>
-    </children>
-  </item>
-  <item nodeId="node-147">
-    <command xml:space="preserve">open cell</command>
-    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-148"/>
-    </children>
-  </item>
-  <item nodeId="node-148">
-    <command xml:space="preserve">unlock cell</command>
-    <result xml:space="preserve">(with the guard key)&#x000A;That doesn't seem to fit the lock.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-149">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">(first opening the Lockup Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-150"/>
-    </children>
-  </item>
-  <item nodeId="node-150">
-    <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-151"/>
-    </children>
-  </item>
-  <item nodeId="node-151">
-    <command xml:space="preserve">unlock door</command>
-    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the Lockup Door.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-152"/>
-    </children>
-  </item>
-  <item nodeId="node-152">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">(first opening the Lockup Door)&#x000A;&#x000A;Lockup&#x000A;You can see a Lockup Door and four cells (closed and empty) here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-120">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">That was a rhetorical question.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-121"/>
-    </children>
-  </item>
-  <item nodeId="node-121">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">That was a rhetorical question.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-122"/>
-    </children>
-  </item>
-  <item nodeId="node-122">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is a guard key) here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-123"/>
-    </children>
-  </item>
-  <item nodeId="node-123">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door and a dining table (on which are a bowl of fruit, eight plates, eight forks, eight spoons and 8 kinives) here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-124"/>
-    </children>
-  </item>
-  <item nodeId="node-124">
-    <command xml:space="preserve">sit on a chair</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-125"/>
-    </children>
-  </item>
-  <item nodeId="node-125">
-    <command xml:space="preserve">exit </command>
-    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-126"/>
-    </children>
-  </item>
-  <item nodeId="node-126">
-    <command xml:space="preserve">stand</command>
-    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-15">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">Please answer yes or no.&gt;</result>
-    <commentary xml:space="preserve">Please answer yes or no.&gt;</commentary>
-    <changed>NO</changed>
-    <children>
       <child nodeId="node-16"/>
     </children>
   </item>
   <item nodeId="node-16">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Did you defeat the Calamity?</result>
-    <commentary xml:space="preserve">Did you defeat the Calamity?</commentary>
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Study&#x000A;You can see a desk (on which are a note and a pen) and a chair here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-17"/>
     </children>
   </item>
   <item nodeId="node-17">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Selecting Profile 16&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190108 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190102 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Sanctum&#x000A;&#x000A;&gt;</commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-96"/>
-      <child nodeId="node-110"/>
-    </children>
-  </item>
-  <item nodeId="node-96">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Library&#x000A;You can see a King Door and a large bookshelf (on which are 100 books and a blue book (in which is a king's key)) here.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-97"/>
-    </children>
-  </item>
-  <item nodeId="node-97">
     <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door and a dining table (on which are a bowl of fruit, eight plates, eight forks, eight spoons and eight kinives) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-98"/>
+      <child nodeId="node-18"/>
     </children>
-  </item>
-  <item nodeId="node-98">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is ] The guard key) here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-99"/>
-    </children>
-  </item>
-  <item nodeId="node-99">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door and a dining table (on which are a bowl of fruit, 8 plates, eight forks, 8 spoons and 8 kinives) here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-100"/>
-    </children>
-  </item>
-  <item nodeId="node-100">
-    <command xml:space="preserve">take a chair </command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-110">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, an enterable chair, a metal table and a keyhook (on which is a guard key) here.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-111"/>
-    </children>
-  </item>
-  <item nodeId="node-111">
-    <command xml:space="preserve">sit on chair</command>
-    <result xml:space="preserve">That's not something you can sit down on.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
   </item>
   <item nodeId="node-18">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you ride a bear?</result>
+    <command xml:space="preserve">examine dining table</command>
+    <result xml:space="preserve">On the dining table are a bowl of fruit, eight plates, eight forks, eight spoons and eight kinives.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -849,17 +167,14 @@
     </children>
   </item>
   <item nodeId="node-19">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-20"/>
-    </children>
   </item>
   <item nodeId="node-20">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Selecting Profile 14&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190106 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Lockup&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -867,14 +182,17 @@
     </children>
   </item>
   <item nodeId="node-21">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile 14&#x000A;&gt;</result>
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-22"/>
+    </children>
   </item>
   <item nodeId="node-22">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <command xml:space="preserve">go east </command>
+    <result xml:space="preserve">Library&#x000A;You can see a King Door and a large bookshelf (on which are 100 books and a blue book (in which is a king's key)) here.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -882,8 +200,8 @@
     </children>
   </item>
   <item nodeId="node-23">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Did you ride a bear?</result>
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Study&#x000A;You can see a desk (on which are a note and a pen) and a chair here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -891,17 +209,17 @@
     </children>
   </item>
   <item nodeId="node-24">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door, a dining table (on which are a bowl of fruit, 8 plates, eight forks, 8 spoons and 8 kinives) and 8 chairs here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-25"/>
     </children>
   </item>
   <item nodeId="node-25">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <command xml:space="preserve">take plate</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -909,8 +227,8 @@
     </children>
   </item>
   <item nodeId="node-26">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <command xml:space="preserve">take a plate</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -918,17 +236,17 @@
     </children>
   </item>
   <item nodeId="node-27">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Selecting Profile 16&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190108 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">examine dining table</command>
+    <result xml:space="preserve">On the dining table are a bowl of fruit, 8 plates, eight forks, 8 spoons and 8 kinives.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-28"/>
     </children>
   </item>
   <item nodeId="node-28">
-    <command xml:space="preserve">go through armory door</command>
-    <result xml:space="preserve">(first opening the Armory Door)&#x000A;It seems to be locked.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
+    <command xml:space="preserve">take bowl of fruit</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -936,8 +254,8 @@
     </children>
   </item>
   <item nodeId="node-29">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door and a guard key here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take 8 plates</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -945,8 +263,8 @@
     </children>
   </item>
   <item nodeId="node-30">
-    <command xml:space="preserve">take guard key</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  8 plates&#x000A;  a bowl of fruit&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -954,7 +272,7 @@
     </children>
   </item>
   <item nodeId="node-31">
-    <command xml:space="preserve">go right</command>
+    <command xml:space="preserve">drop plate</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
@@ -963,8 +281,8 @@
     </children>
   </item>
   <item nodeId="node-32">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">drop plates</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -972,8 +290,8 @@
     </children>
   </item>
   <item nodeId="node-33">
-    <command xml:space="preserve">open armory door</command>
-    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">examine</command>
+    <result xml:space="preserve">(the bowl of fruit)&#x000A;You see nothing special about the bowl of fruit.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -981,17 +299,17 @@
     </children>
   </item>
   <item nodeId="node-34">
-    <command xml:space="preserve">unlock armory door</command>
-    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the Armory Door.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Dining Hall&#x000A;You can see 8 plates, a Korok Door, a dining table (on which are eight forks, 8 spoons and 8 kinives) and 8 chairs here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-35"/>
     </children>
   </item>
   <item nodeId="node-35">
-    <command xml:space="preserve">examine guard key</command>
-    <result xml:space="preserve">You see nothing special about the guard key.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Study&#x000A;You can see a desk (on which are a note and a pen) and a chair here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -999,14 +317,17 @@
     </children>
   </item>
   <item nodeId="node-36">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">(first opening the Armory Door)&#x000A;&#x000A;Armory&#x000A;You can see an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Library&#x000A;You can see a King Door and a large bookshelf (on which are 100 books and a blue book (in which is a king's key)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-37"/>
+    </children>
   </item>
   <item nodeId="node-37">
-    <command xml:space="preserve">0</command>
-    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <command xml:space="preserve">take book</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1014,8 +335,8 @@
     </children>
   </item>
   <item nodeId="node-38">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a blue book&#x000A;    a king's key&#x000A;  a bowl of fruit&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1023,8 +344,8 @@
     </children>
   </item>
   <item nodeId="node-39">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you ride a bear?</result>
+    <command xml:space="preserve">take a book</command>
+    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1032,35 +353,37 @@
     </children>
   </item>
   <item nodeId="node-40">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <command xml:space="preserve">take 100 books</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-41"/>
-    </children>
   </item>
   <item nodeId="node-41">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Selecting Profile 1&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190106 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Sanctum&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is a guard key) here.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-42"/>
+      <child nodeId="node-54"/>
+      <child nodeId="node-64"/>
+      <child nodeId="node-76"/>
     </children>
   </item>
   <item nodeId="node-42">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">sit on chair</command>
+    <result xml:space="preserve">You get onto the metal chair.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-43"/>
+      <child nodeId="node-46"/>
+      <child nodeId="node-48"/>
     </children>
   </item>
   <item nodeId="node-43">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">sit on table</command>
+    <result xml:space="preserve">That's not something you can sit down on.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1068,23 +391,23 @@
     </children>
   </item>
   <item nodeId="node-44">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-45">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <command xml:space="preserve">sit on metal chair</command>
+    <result xml:space="preserve">That's not something you can sit down on.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-46"/>
+      <child nodeId="node-45"/>
     </children>
   </item>
+  <item nodeId="node-45">
+    <command xml:space="preserve">sit on metal table</command>
+    <result xml:space="preserve">That's not something you can sit down on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-46">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you ride a bear?</result>
+    <command xml:space="preserve">enter chair</command>
+    <result xml:space="preserve">That's not something you can enter.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1092,36 +415,32 @@
     </children>
   </item>
   <item nodeId="node-47">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <command xml:space="preserve">fuck</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-48">
+    <command xml:space="preserve">exit chair</command>
+    <result xml:space="preserve">I only understood you as far as wanting to exit.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-48"/>
-    </children>
-  </item>
-  <item nodeId="node-48">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Selecting Profile 1&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190108 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
       <child nodeId="node-49"/>
-      <child nodeId="node-50"/>
-      <child nodeId="node-53"/>
-      <child nodeId="node-54"/>
-      <child nodeId="node-57"/>
     </children>
   </item>
   <item nodeId="node-49">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
+    <command xml:space="preserve">exit metal chair</command>
+    <result xml:space="preserve">I only understood you as far as wanting to exit.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-50"/>
+    </children>
   </item>
   <item nodeId="node-50">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
+    <command xml:space="preserve">stand</command>
+    <result xml:space="preserve">You get off the metal chair.&#x000A;&#x000A;Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is a guard key) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1129,8 +448,8 @@
     </children>
   </item>
   <item nodeId="node-51">
-    <command xml:space="preserve">ls</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door, a dining table (on which is a bowl of fruit) and eight wooden chairs here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1138,78 +457,50 @@
     </children>
   </item>
   <item nodeId="node-52">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Sanctum&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">sit on a wooden chair</command>
+    <result xml:space="preserve">I only understood you as far as wanting to sit on eight wooden chairs.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-53"/>
+    </children>
   </item>
   <item nodeId="node-53">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is ] The guard key) here.&#x000A;&#x000A;Beginning Profile 1&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-101"/>
-    </children>
-  </item>
-  <item nodeId="node-101">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door, a dining table (on which is a bowl of fruit) and 8 chairs here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-102"/>
-    </children>
-  </item>
-  <item nodeId="node-102">
-    <command xml:space="preserve">take a chair</command>
+    <command xml:space="preserve">sit on chair</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-103"/>
-    </children>
-  </item>
-  <item nodeId="node-103">
-    <command xml:space="preserve">take chair</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-104"/>
-    </children>
-  </item>
-  <item nodeId="node-104">
-    <command xml:space="preserve">examine 8 chairs</command>
-    <result xml:space="preserve">You see nothing special about 8 chairs.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
   <item nodeId="node-54">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Study&#x000A;Beginning Profile1&#x000A;&gt;</result>
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door, a dining table (on which is a bowl of fruit) and eight chairs here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-55"/>
-      <child nodeId="node-56"/>
     </children>
   </item>
   <item nodeId="node-55">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Study&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take a chiar</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-56"/>
+    </children>
   </item>
   <item nodeId="node-56">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take a chair</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-57"/>
+    </children>
   </item>
   <item nodeId="node-57">
-    <command xml:space="preserve">sleep</command>
-    <result xml:space="preserve">You aren't feeling especially drowsy.&#x000A;&#x000A;Beginning Profile 1&#x000A;&gt;</result>
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1217,14 +508,17 @@
     </children>
   </item>
   <item nodeId="node-58">
-    <command xml:space="preserve">wake up</command>
-    <result xml:space="preserve">The dreadful truth is, this is not a dream.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take chair </command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-59"/>
+    </children>
   </item>
   <item nodeId="node-59">
-    <command xml:space="preserve">no</command>
-    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <command xml:space="preserve">take chair </command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1232,8 +526,8 @@
     </children>
   </item>
   <item nodeId="node-60">
-    <command xml:space="preserve">no</command>
-    <result xml:space="preserve">Did you ride a bear?</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door, a dining table (on which is a bowl of fruit) and four chairs here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1241,8 +535,8 @@
     </children>
   </item>
   <item nodeId="node-61">
-    <command xml:space="preserve">no</command>
-    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <command xml:space="preserve">stuff</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1250,8 +544,8 @@
     </children>
   </item>
   <item nodeId="node-62">
-    <command xml:space="preserve">no</command>
-    <result xml:space="preserve">Selecting Profile 1&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190107 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  four chairs&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1259,32 +553,35 @@
     </children>
   </item>
   <item nodeId="node-63">
-    <command xml:space="preserve">wait</command>
-    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile 1&#x000A;&gt;</result>
+    <command xml:space="preserve">drop chairs</command>
+    <result xml:space="preserve">chair: Dropped.&#x000A;chair: Dropped.&#x000A;chair: Dropped.&#x000A;chair: Dropped.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
   <item nodeId="node-64">
-    <command xml:space="preserve">ye</command>
-    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-65"/>
+      <child nodeId="node-180"/>
+      <child nodeId="node-703"/>
     </children>
   </item>
   <item nodeId="node-65">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening the Lockup Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-66"/>
+      <child nodeId="node-652"/>
     </children>
   </item>
   <item nodeId="node-66">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Did you ride a bear?</result>
+    <command xml:space="preserve">unlock door</command>
+    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the Lockup Door.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1292,24 +589,2176 @@
     </children>
   </item>
   <item nodeId="node-67">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening the Lockup Door)&#x000A;&#x000A;Lockup&#x000A;You can see a Lockup Door and four cells (closed and empty) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-68"/>
     </children>
   </item>
   <item nodeId="node-68">
-    <command xml:space="preserve">y</command>
-    <result xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190107 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">check cages</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-69"/>
     </children>
   </item>
   <item nodeId="node-69">
+    <command xml:space="preserve">take cell</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-70"/>
+    </children>
+  </item>
+  <item nodeId="node-70">
+    <command xml:space="preserve">drop cell</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-71"/>
+    </children>
+  </item>
+  <item nodeId="node-71">
+    <command xml:space="preserve">enter a cell</command>
+    <result xml:space="preserve">You can't get into the closed cell.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-72"/>
+    </children>
+  </item>
+  <item nodeId="node-72">
+    <command xml:space="preserve">open cells</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-73"/>
+    </children>
+  </item>
+  <item nodeId="node-73">
+    <command xml:space="preserve">open all cells</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-74"/>
+    </children>
+  </item>
+  <item nodeId="node-74">
+    <command xml:space="preserve">open cell</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-75"/>
+    </children>
+  </item>
+  <item nodeId="node-75">
+    <command xml:space="preserve">unlock cell</command>
+    <result xml:space="preserve">(with the guard key)&#x000A;That doesn't seem to fit the lock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-652">
+    <command xml:space="preserve">unlock lockup door</command>
+    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the Lockup Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-653"/>
+    </children>
+  </item>
+  <item nodeId="node-653">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening the Lockup Door)&#x000A;&#x000A;Lockup&#x000A;You can see a Lockup Door, four cells (closed and empty) and a big cell (closed) (in which is Farore's pearl) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-654"/>
+    </children>
+  </item>
+  <item nodeId="node-654">
+    <command xml:space="preserve">open big cell</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-655"/>
+    </children>
+  </item>
+  <item nodeId="node-655">
+    <command xml:space="preserve">unlock big cell</command>
+    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the big cell.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-656"/>
+    </children>
+  </item>
+  <item nodeId="node-656">
+    <command xml:space="preserve">take farore's pearl</command>
+    <result xml:space="preserve">The big cell isn't open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-657"/>
+    </children>
+  </item>
+  <item nodeId="node-657">
+    <command xml:space="preserve">open big cell</command>
+    <result xml:space="preserve">You open the big cell.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-658"/>
+    </children>
+  </item>
+  <item nodeId="node-658">
+    <command xml:space="preserve">take farore's pearl</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-659"/>
+    </children>
+  </item>
+  <item nodeId="node-659">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-660"/>
+    </children>
+  </item>
+  <item nodeId="node-660">
+    <command xml:space="preserve">go east </command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see a Boss Door, an Armory Door, a statue of Din, a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-661"/>
+    </children>
+  </item>
+  <item nodeId="node-661">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Library&#x000A;You can see a King Door, a large bookshelf (on which is a blue book (closed)), a plush chair and a fireplace here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-662"/>
+    </children>
+  </item>
+  <item nodeId="node-662">
+    <command xml:space="preserve">open blue book</command>
+    <result xml:space="preserve">You open the blue book, revealing a king's key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-663"/>
+    </children>
+  </item>
+  <item nodeId="node-663">
+    <command xml:space="preserve">take king's key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-664"/>
+    </children>
+  </item>
+  <item nodeId="node-664">
+    <command xml:space="preserve">unlock king door</command>
+    <result xml:space="preserve">What do you want to unlock the King Door with?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-665"/>
+    </children>
+  </item>
+  <item nodeId="node-665">
+    <command xml:space="preserve">king's key</command>
+    <result xml:space="preserve">You unlock the King Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-666"/>
+    </children>
+  </item>
+  <item nodeId="node-666">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">(first opening the King Door)&#x000A;&#x000A;King's Chamber&#x000A;You can see a King Door, a king's bed and an extravagent desk (on which is Naryu's Pearl) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-667"/>
+    </children>
+  </item>
+  <item nodeId="node-667">
+    <command xml:space="preserve">take naryu's pearl</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-668"/>
+    </children>
+  </item>
+  <item nodeId="node-668">
+    <command xml:space="preserve">go south </command>
+    <result xml:space="preserve">Library&#x000A;You can see a King Door, a large bookshelf (on which is a blue book (empty)), a plush chair and a fireplace here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-669"/>
+    </children>
+  </item>
+  <item nodeId="node-669">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-670"/>
+    </children>
+  </item>
+  <item nodeId="node-670">
+    <command xml:space="preserve">unlock Armrory door</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-671"/>
+    </children>
+  </item>
+  <item nodeId="node-671">
+    <command xml:space="preserve">unlock armory door with guard key</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-672"/>
+    </children>
+  </item>
+  <item nodeId="node-672">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-673"/>
+    </children>
+  </item>
+  <item nodeId="node-673">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Library&#x000A;You can see a King Door, a large bookshelf (on which is a blue book (empty)), a plush chair and a fireplace here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-674"/>
+    </children>
+  </item>
+  <item nodeId="node-674">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see a Boss Door, an Armory Door, a statue of Din, a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-675"/>
+    </children>
+  </item>
+  <item nodeId="node-675">
+    <command xml:space="preserve">unlock armory door with guard key</command>
+    <result xml:space="preserve">You unlock the Armory Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-676"/>
+    </children>
+  </item>
+  <item nodeId="node-676">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the Armory Door)&#x000A;&#x000A;Armory&#x000A;You can see an Armory Door, a weapon rack (on which are five swords and two bows) and a chest (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-677"/>
+    </children>
+  </item>
+  <item nodeId="node-677">
+    <command xml:space="preserve">open chest</command>
+    <result xml:space="preserve">You open the chest, revealing Din's Pearl.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-678"/>
+    </children>
+  </item>
+  <item nodeId="node-678">
+    <command xml:space="preserve">take Din's pearl</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-679"/>
+    </children>
+  </item>
+  <item nodeId="node-679">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see an Armory Door, a Boss Door, a statue of Din, a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-680"/>
+    </children>
+  </item>
+  <item nodeId="node-680">
+    <command xml:space="preserve">put din's pearl on din</command>
+    <result xml:space="preserve">You put Din's Pearl on the statue of Din.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-681"/>
+    </children>
+  </item>
+  <item nodeId="node-681">
+    <command xml:space="preserve">put farore pearl on farore</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-682"/>
+    </children>
+  </item>
+  <item nodeId="node-682">
+    <command xml:space="preserve">put farore's pearl on farore</command>
+    <result xml:space="preserve">You put Farore's pearl on the statue of Farore.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-683"/>
+    </children>
+  </item>
+  <item nodeId="node-683">
+    <command xml:space="preserve">put naryu's pearl on naryu</command>
+    <result xml:space="preserve">You put Naryu's Pearl on the statue of Naryu.&#x000A;&#x000A;The Sanctum has opened.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-684"/>
+    </children>
+  </item>
+  <item nodeId="node-684">
+    <command xml:space="preserve">open boss door</command>
+    <result xml:space="preserve">You open the Boss Door.&#x000A;&#x000A;The Sanctum has opened.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-685"/>
+    </children>
+  </item>
+  <item nodeId="node-685">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Sanctum&#x000A;You can see a Boss Door and a Throne here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-686"/>
+    </children>
+  </item>
+  <item nodeId="node-686">
+    <command xml:space="preserve">take throne</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-687"/>
+    </children>
+  </item>
+  <item nodeId="node-687">
+    <command xml:space="preserve">eat throne</command>
+    <result xml:space="preserve">You eat the Throne. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">You eat the Throne. Not bad.&#x000A;&#x000A;&gt;</commentary>
+    <changed>YES</changed>
+  </item>
+  <item nodeId="node-180">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see a Boss Door, an Armory Door, a statue of Din, a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-181"/>
+      <child nodeId="node-185"/>
+    </children>
+  </item>
+  <item nodeId="node-181">
+    <command xml:space="preserve">place key on statue of din</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-182"/>
+    </children>
+  </item>
+  <item nodeId="node-182">
+    <command xml:space="preserve">place key</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-183"/>
+    </children>
+  </item>
+  <item nodeId="node-183">
+    <command xml:space="preserve">put key on statue</command>
+    <result xml:space="preserve">Which do you mean, the statue of Din, the statue of Farore or the statue of Naryu?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-184"/>
+    </children>
+  </item>
+  <item nodeId="node-184">
+    <command xml:space="preserve">the statue of din</command>
+    <result xml:space="preserve">Putting things on the statue of Din would achieve nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-185">
+    <command xml:space="preserve">put key on statue of din</command>
+    <result xml:space="preserve">You put the guard key on the statue of Din.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-186"/>
+    </children>
+  </item>
+  <item nodeId="node-186">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see a Boss Door, an Armory Door, a statue of Din (on which is a guard key), a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-187"/>
+    </children>
+  </item>
+  <item nodeId="node-187">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-188"/>
+    </children>
+  </item>
+  <item nodeId="node-188">
+    <command xml:space="preserve">open armory door</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-189"/>
+    </children>
+  </item>
+  <item nodeId="node-189">
+    <command xml:space="preserve">unlock armory door</command>
+    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the Armory Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-190"/>
+    </children>
+  </item>
+  <item nodeId="node-190">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the Armory Door)&#x000A;&#x000A;Armory&#x000A;You can see an Armory Door, a weapon rack (on which are five swords and two bows) and a chest (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-191"/>
+    </children>
+  </item>
+  <item nodeId="node-191">
+    <command xml:space="preserve">open chest</command>
+    <result xml:space="preserve">You open the chest, revealing Din's Pearl.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-192"/>
+    </children>
+  </item>
+  <item nodeId="node-192">
+    <command xml:space="preserve">take pearl</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-193"/>
+    </children>
+  </item>
+  <item nodeId="node-193">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see an Armory Door, a Boss Door, a statue of Din, a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-194"/>
+    </children>
+  </item>
+  <item nodeId="node-194">
+    <command xml:space="preserve">place dins pearl on the statue of din</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-195"/>
+    </children>
+  </item>
+  <item nodeId="node-195">
+    <command xml:space="preserve">put dins pearl on the statue of din</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-196"/>
+    </children>
+  </item>
+  <item nodeId="node-196">
+    <command xml:space="preserve">put din's pearl on the statue of din</command>
+    <result xml:space="preserve">You put Din's Pearl on the statue of Din.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-197"/>
+    </children>
+  </item>
+  <item nodeId="node-197">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see an Armory Door, a Boss Door, a statue of Din (on which is Din's Pearl), a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-198"/>
+    </children>
+  </item>
+  <item nodeId="node-198">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Library&#x000A;You can see a King Door, a large bookshelf (on which is a blue book (closed)), a plush chair and a fireplace here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-199"/>
+    </children>
+  </item>
+  <item nodeId="node-199">
+    <command xml:space="preserve">take book</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-200"/>
+    </children>
+  </item>
+  <item nodeId="node-200">
+    <command xml:space="preserve">open book</command>
+    <result xml:space="preserve">You open the blue book, revealing a king's key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-201"/>
+    </children>
+  </item>
+  <item nodeId="node-201">
+    <command xml:space="preserve">take king's key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-202"/>
+    </children>
+  </item>
+  <item nodeId="node-202">
+    <command xml:space="preserve">open king door</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-203"/>
+    </children>
+  </item>
+  <item nodeId="node-203">
+    <command xml:space="preserve">unlock door</command>
+    <result xml:space="preserve">What do you want to unlock the King Door with?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-204"/>
+    </children>
+  </item>
+  <item nodeId="node-204">
+    <command xml:space="preserve">king's key</command>
+    <result xml:space="preserve">You unlock the King Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-205"/>
+    </children>
+  </item>
+  <item nodeId="node-205">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">(first opening the King Door)&#x000A;&#x000A;King's Chamber&#x000A;You can see a King Door, a king's bed and an extravagent desk (on which is Naryu's Pearl) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-206"/>
+    </children>
+  </item>
+  <item nodeId="node-206">
+    <command xml:space="preserve">take Naryu's Pearl</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-207"/>
+    </children>
+  </item>
+  <item nodeId="node-207">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Library&#x000A;You can see a King Door, a large bookshelf, a plush chair and a fireplace here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-208"/>
+    </children>
+  </item>
+  <item nodeId="node-208">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see an Armory Door, a Boss Door, a statue of Din (on which is Din's Pearl), a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-209"/>
+    </children>
+  </item>
+  <item nodeId="node-209">
+    <command xml:space="preserve">put pearl on the statue of Naryu</command>
+    <result xml:space="preserve">(Naryu's Pearl on the statue of Naryu)&#x000A;You put Naryu's Pearl on the statue of Naryu.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-210"/>
+    </children>
+  </item>
+  <item nodeId="node-210">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see an Armory Door, a Boss Door, a statue of Din (on which is Din's Pearl), a statue of Farore and a statue of Naryu (on which is Naryu's Pearl) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-606"/>
+    </children>
+  </item>
+  <item nodeId="node-606">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying: &#x000A;a king's key&#x000A;a blue book&#x000A;a guard key&#x000A;(Health: 100)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-607"/>
+    </children>
+  </item>
+  <item nodeId="node-607">
+    <command xml:space="preserve">unlock amory door</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-608"/>
+    </children>
+  </item>
+  <item nodeId="node-608">
+    <command xml:space="preserve">unlock door</command>
+    <result xml:space="preserve">Which do you mean, the Armory Door or the Boss Door?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-609"/>
+    </children>
+  </item>
+  <item nodeId="node-609">
+    <command xml:space="preserve">armory </command>
+    <result xml:space="preserve">What do you want to unlock the Armory Door with?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-610"/>
+    </children>
+  </item>
+  <item nodeId="node-610">
+    <command xml:space="preserve">guard key</command>
+    <result xml:space="preserve">That's unlocked at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-611"/>
+    </children>
+  </item>
+  <item nodeId="node-611">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Armory&#x000A;You can see an Armory Door, a weapon rack (on which are five swords and two bows) and a chest (empty) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-612"/>
+    </children>
+  </item>
+  <item nodeId="node-612">
+    <command xml:space="preserve">take bow</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-613"/>
+    </children>
+  </item>
+  <item nodeId="node-613">
+    <command xml:space="preserve">shoot self with bow</command>
+    <result xml:space="preserve">*** You have commited suicide! ***&#x000A;&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-614"/>
+    </children>
+  </item>
+  <item nodeId="node-614">
+    <command xml:space="preserve">UNDO</command>
+    <result xml:space="preserve">Armory&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-615"/>
+    </children>
+  </item>
+  <item nodeId="node-615">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Armory&#x000A;You can see an Armory Door, a weapon rack (on which are five swords and a bow) and a chest (empty) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-616"/>
+    </children>
+  </item>
+  <item nodeId="node-616">
+    <command xml:space="preserve">take chest</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-617"/>
+    </children>
+  </item>
+  <item nodeId="node-617">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying: &#x000A;a chest&#x000A;a bow&#x000A;a king's key&#x000A;a blue book&#x000A;a guard key&#x000A;(Health: 100)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-618"/>
+    </children>
+  </item>
+  <item nodeId="node-618">
+    <command xml:space="preserve">put keys in chest</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-619"/>
+    </children>
+  </item>
+  <item nodeId="node-619">
+    <command xml:space="preserve">put guard key in chest</command>
+    <result xml:space="preserve">You put the guard key into the chest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-620"/>
+    </children>
+  </item>
+  <item nodeId="node-620">
+    <command xml:space="preserve">put king's key in chest</command>
+    <result xml:space="preserve">You put the king's key into the chest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-621"/>
+    </children>
+  </item>
+  <item nodeId="node-621">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see an Armory Door, a Boss Door, a statue of Din (on which is Din's Pearl), a statue of Farore and a statue of Naryu (on which is Naryu's Pearl) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-622"/>
+    </children>
+  </item>
+  <item nodeId="node-622">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-623"/>
+    </children>
+  </item>
+  <item nodeId="node-623">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door, a dining table (on which are a bowl of fruit and a knife) and eight chairs here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-624"/>
+    </children>
+  </item>
+  <item nodeId="node-624">
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-625"/>
+    </children>
+  </item>
+  <item nodeId="node-625">
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-626"/>
+    </children>
+  </item>
+  <item nodeId="node-626">
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-627"/>
+    </children>
+  </item>
+  <item nodeId="node-627">
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-628"/>
+    </children>
+  </item>
+  <item nodeId="node-628">
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-629"/>
+    </children>
+  </item>
+  <item nodeId="node-629">
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-630"/>
+    </children>
+  </item>
+  <item nodeId="node-630">
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-631"/>
+    </children>
+  </item>
+  <item nodeId="node-631">
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-632"/>
+    </children>
+  </item>
+  <item nodeId="node-632">
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-633"/>
+    </children>
+  </item>
+  <item nodeId="node-633">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying: &#x000A;eight chairs&#x000A;a chest&#x000A;a bow&#x000A;a blue book&#x000A;(Health: 100)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-634"/>
+    </children>
+  </item>
+  <item nodeId="node-634">
+    <command xml:space="preserve">open chest</command>
+    <result xml:space="preserve">That's already open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-635"/>
+    </children>
+  </item>
+  <item nodeId="node-635">
+    <command xml:space="preserve">examine chest</command>
+    <result xml:space="preserve">In the chest are a king's key and a guard key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-636"/>
+    </children>
+  </item>
+  <item nodeId="node-636">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Which do you mean, the king's key or the guard key?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-637"/>
+    </children>
+  </item>
+  <item nodeId="node-637">
+    <command xml:space="preserve">king's key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-638"/>
+    </children>
+  </item>
+  <item nodeId="node-638">
+    <command xml:space="preserve">take guard key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-639"/>
+    </children>
+  </item>
+  <item nodeId="node-639">
+    <command xml:space="preserve">close chest</command>
+    <result xml:space="preserve">You close the chest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-640"/>
+    </children>
+  </item>
+  <item nodeId="node-640">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying: &#x000A;a guard key&#x000A;a king's key&#x000A;eight chairs&#x000A;a chest&#x000A;a bow&#x000A;a blue book&#x000A;(Health: 100)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-641"/>
+    </children>
+  </item>
+  <item nodeId="node-641">
+    <command xml:space="preserve">eat chair</command>
+    <result xml:space="preserve">You eat the chair. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-642"/>
+    </children>
+  </item>
+  <item nodeId="node-642">
+    <command xml:space="preserve">eat chair</command>
+    <result xml:space="preserve">You eat the chair. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-643"/>
+    </children>
+  </item>
+  <item nodeId="node-643">
+    <command xml:space="preserve">eat chair</command>
+    <result xml:space="preserve">You eat the chair. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-644"/>
+    </children>
+  </item>
+  <item nodeId="node-644">
+    <command xml:space="preserve">eat chair</command>
+    <result xml:space="preserve">You eat the chair. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-645"/>
+    </children>
+  </item>
+  <item nodeId="node-645">
+    <command xml:space="preserve">eat chair</command>
+    <result xml:space="preserve">You eat the chair. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-646"/>
+    </children>
+  </item>
+  <item nodeId="node-646">
+    <command xml:space="preserve">eat chair</command>
+    <result xml:space="preserve">You eat the chair. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-647"/>
+    </children>
+  </item>
+  <item nodeId="node-647">
+    <command xml:space="preserve">eat chair</command>
+    <result xml:space="preserve">You eat the chair. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-648"/>
+    </children>
+  </item>
+  <item nodeId="node-648">
+    <command xml:space="preserve">eat chair</command>
+    <result xml:space="preserve">You eat the chair. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-649"/>
+    </children>
+  </item>
+  <item nodeId="node-649">
+    <command xml:space="preserve">eat chair</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-650"/>
+    </children>
+  </item>
+  <item nodeId="node-650">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying: &#x000A;a guard key&#x000A;a king's key&#x000A;a chest&#x000A;a bow&#x000A;a blue book&#x000A;(Health: 100)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-651"/>
+    </children>
+  </item>
+  <item nodeId="node-651">
+    <command xml:space="preserve">vomit chair</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-703">
+    <command xml:space="preserve">unlock</command>
+    <result xml:space="preserve">(the guard key with the guard key)&#x000A;That doesn't seem to be something you can unlock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-704"/>
+    </children>
+  </item>
+  <item nodeId="node-704">
+    <command xml:space="preserve">unlock lockup door</command>
+    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the Lockup Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-705"/>
+    </children>
+  </item>
+  <item nodeId="node-705">
+    <command xml:space="preserve">enter lockup door</command>
+    <result xml:space="preserve">(first opening the Lockup Door)&#x000A;&#x000A;Lockup&#x000A;You can see a Lockup Door, four cells (closed and empty) and a big cell (closed) (in which is Farore's pearl) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-706"/>
+    </children>
+  </item>
+  <item nodeId="node-706">
+    <command xml:space="preserve">take cell</command>
+    <result xml:space="preserve">Which do you mean, a cell or the big cell?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-707"/>
+    </children>
+  </item>
+  <item nodeId="node-707">
+    <command xml:space="preserve">a cell</command>
+    <result xml:space="preserve">(the cell)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-708"/>
+    </children>
+  </item>
+  <item nodeId="node-708">
+    <command xml:space="preserve">enter a cell</command>
+    <result xml:space="preserve">(the cell)&#x000A;You can't get into the closed cell.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-709"/>
+    </children>
+  </item>
+  <item nodeId="node-709">
+    <command xml:space="preserve">open a cell</command>
+    <result xml:space="preserve">(the cell)&#x000A;You open the cell.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-710"/>
+    </children>
+  </item>
+  <item nodeId="node-710">
+    <command xml:space="preserve">enter a cell</command>
+    <result xml:space="preserve">(the cell)&#x000A;You can only get into something free-standing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-76">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening the Lockup Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-77"/>
+    </children>
+  </item>
+  <item nodeId="node-77">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-78"/>
+    </children>
+  </item>
+  <item nodeId="node-78">
+    <command xml:space="preserve">unlock door</command>
+    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the Lockup Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-79"/>
+    </children>
+  </item>
+  <item nodeId="node-79">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">(first opening the Lockup Door)&#x000A;&#x000A;Lockup&#x000A;You can see a Lockup Door and four cells (closed and empty) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-80">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">That was a rhetorical question.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-81"/>
+      <child nodeId="node-153"/>
+    </children>
+  </item>
+  <item nodeId="node-81">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">That was a rhetorical question.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-82"/>
+    </children>
+  </item>
+  <item nodeId="node-82">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is a guard key) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-83"/>
+    </children>
+  </item>
+  <item nodeId="node-83">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door and a dining table (on which are a bowl of fruit, eight plates, eight forks, eight spoons and 8 kinives) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-84"/>
+    </children>
+  </item>
+  <item nodeId="node-84">
+    <command xml:space="preserve">sit on a chair</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-85"/>
+    </children>
+  </item>
+  <item nodeId="node-85">
+    <command xml:space="preserve">exit </command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-86"/>
+    </children>
+  </item>
+  <item nodeId="node-86">
+    <command xml:space="preserve">stand</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-153">
+    <command xml:space="preserve">take master sword</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-154"/>
+    </children>
+  </item>
+  <item nodeId="node-154">
+    <command xml:space="preserve">attack boss door</command>
+    <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-155"/>
+    </children>
+  </item>
+  <item nodeId="node-155">
+    <command xml:space="preserve">attack self</command>
+    <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-156"/>
+    </children>
+  </item>
+  <item nodeId="node-156">
+    <command xml:space="preserve">stab door</command>
+    <result xml:space="preserve">Which do you mean, the Boss Door or the Armory Door?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-157"/>
+    </children>
+  </item>
+  <item nodeId="node-157">
+    <command xml:space="preserve">stab</command>
+    <result xml:space="preserve">(the Master Sword with the Master Sword)&#x000A;You try to break the blade so that. . . Wait, you can't stab the Master Sword with itself!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-158"/>
+    </children>
+  </item>
+  <item nodeId="node-158">
+    <command xml:space="preserve">stab self</command>
+    <result xml:space="preserve">(with the Master Sword)&#x000A;&#x000A;&#x000A;    *** You have committed suicide! ***&#x000A;&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-693">
+    <command xml:space="preserve">eat statue of din</command>
+    <result xml:space="preserve">You eat the statue of Din. Not bad.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-694"/>
+    </children>
+  </item>
+  <item nodeId="node-694">
+    <command xml:space="preserve">eat boss door</command>
+    <result xml:space="preserve">*** Run-time problem P44: Attempt to remove a door from play.&#x000A;&#x000A;You eat the Boss Door. Not bad.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-695">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-696"/>
+    </children>
+  </item>
+  <item nodeId="node-696">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190109 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door, an Armory Door, a statue of Din, a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-697"/>
+    </children>
+  </item>
+  <item nodeId="node-697">
+    <command xml:space="preserve">eat boss door</command>
+    <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-698"/>
+    </children>
+  </item>
+  <item nodeId="node-698">
+    <command xml:space="preserve">eat statue of din</command>
+    <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-699"/>
+    </children>
+  </item>
+  <item nodeId="node-699">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is a guard key) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-700"/>
+    </children>
+  </item>
+  <item nodeId="node-700">
+    <command xml:space="preserve">eat metal chair</command>
+    <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-701"/>
+    </children>
+  </item>
+  <item nodeId="node-701">
+    <command xml:space="preserve">eat keyhook</command>
+    <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-702"/>
+    </children>
+  </item>
+  <item nodeId="node-702">
+    <command xml:space="preserve">eat guard key</command>
+    <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-87">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <commentary xml:space="preserve">Please answer yes or no.&gt;</commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-88"/>
+    </children>
+  </item>
+  <item nodeId="node-88">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve">Did you defeat the Calamity?</commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-89"/>
+    </children>
+  </item>
+  <item nodeId="node-89">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190108 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190102 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Sanctum&#x000A;&#x000A;&gt;</commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-90"/>
+      <child nodeId="node-95"/>
+    </children>
+  </item>
+  <item nodeId="node-90">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Library&#x000A;You can see a King Door and a large bookshelf (on which are 100 books and a blue book (in which is a king's key)) here.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-91"/>
+    </children>
+  </item>
+  <item nodeId="node-91">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-92"/>
+    </children>
+  </item>
+  <item nodeId="node-92">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is ] The guard key) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-93"/>
+    </children>
+  </item>
+  <item nodeId="node-93">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door and a dining table (on which are a bowl of fruit, 8 plates, eight forks, 8 spoons and 8 kinives) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-94"/>
+    </children>
+  </item>
+  <item nodeId="node-94">
+    <command xml:space="preserve">take a chair </command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-95">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, an enterable chair, a metal table and a keyhook (on which is a guard key) here.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-96"/>
+    </children>
+  </item>
+  <item nodeId="node-96">
+    <command xml:space="preserve">sit on chair</command>
+    <result xml:space="preserve">That's not something you can sit down on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-97">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Did you ride a bear?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-98"/>
+    </children>
+  </item>
+  <item nodeId="node-98">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-99"/>
+      <child nodeId="node-159"/>
+    </children>
+  </item>
+  <item nodeId="node-99">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 14&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190106 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Lockup&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-100"/>
+    </children>
+  </item>
+  <item nodeId="node-100">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile 14&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-159">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Selecting Profile 6&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190109 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door, an Armory Door and a Master Sword here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-160"/>
+    </children>
+  </item>
+  <item nodeId="node-160">
+    <command xml:space="preserve">go left</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-161"/>
+    </children>
+  </item>
+  <item nodeId="node-161">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is a guard key) here.&#x000A;&#x000A;Beginning Profile 6&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-162"/>
+    </children>
+  </item>
+  <item nodeId="node-162">
+    <command xml:space="preserve">tke key</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-163"/>
+    </children>
+  </item>
+  <item nodeId="node-163">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-164"/>
+    </children>
+  </item>
+  <item nodeId="node-164">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see a Boss Door, an Armory Door and a Master Sword here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-165"/>
+    </children>
+  </item>
+  <item nodeId="node-165">
+    <command xml:space="preserve">open armory door</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-166"/>
+    </children>
+  </item>
+  <item nodeId="node-166">
+    <command xml:space="preserve">unlock armory door</command>
+    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the Armory Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-167"/>
+    </children>
+  </item>
+  <item nodeId="node-167">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the Armory Door)&#x000A;&#x000A;Armory&#x000A;You can see an Armory Door, a weapon rack (on which are five swords and two bows) and a chest (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-168"/>
+    </children>
+  </item>
+  <item nodeId="node-168">
+    <command xml:space="preserve">take bow</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-169"/>
+    </children>
+  </item>
+  <item nodeId="node-169">
+    <command xml:space="preserve">take sword</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-170"/>
+    </children>
+  </item>
+  <item nodeId="node-170">
+    <command xml:space="preserve">take din's pearl</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-171"/>
+    </children>
+  </item>
+  <item nodeId="node-171">
+    <command xml:space="preserve">shoot self</command>
+    <result xml:space="preserve">What do you want to shoot yourself with?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-172"/>
+    </children>
+  </item>
+  <item nodeId="node-172">
+    <command xml:space="preserve">bow</command>
+    <result xml:space="preserve">*** You have commited suicide! ***&#x000A;&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-173"/>
+    </children>
+  </item>
+  <item nodeId="node-173">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Armory&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-174"/>
+    </children>
+  </item>
+  <item nodeId="node-174">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying: &#x000A;a sword&#x000A;a bow&#x000A;a guard key&#x000A;(Health: 100)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-175"/>
+    </children>
+  </item>
+  <item nodeId="node-175">
+    <command xml:space="preserve">shoot weapon rack</command>
+    <result xml:space="preserve">What do you want to shoot the weapon rack with?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-176"/>
+    </children>
+  </item>
+  <item nodeId="node-176">
+    <command xml:space="preserve">bow</command>
+    <result xml:space="preserve">You shoot the weapon rack with your bow. Well, I hope that makes you feel better. Hopefully shooting the weapon rack won't attract any unwanted attention.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-177"/>
+    </children>
+  </item>
+  <item nodeId="node-177">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Armory&#x000A;You can see an Armory Door, a weapon rack (on which are four swords and a bow) and a chest (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-178"/>
+    </children>
+  </item>
+  <item nodeId="node-178">
+    <command xml:space="preserve">open chest</command>
+    <result xml:space="preserve">You open the chest, revealing Din's Pearl.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-179"/>
+    </children>
+  </item>
+  <item nodeId="node-179">
+    <command xml:space="preserve">take Din's Pearl</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-101">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-102"/>
+    </children>
+  </item>
+  <item nodeId="node-102">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you ride a bear?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-103"/>
+    </children>
+  </item>
+  <item nodeId="node-103">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-104"/>
+      <child nodeId="node-688"/>
+    </children>
+  </item>
+  <item nodeId="node-104">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-105"/>
+    </children>
+  </item>
+  <item nodeId="node-105">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-106"/>
+    </children>
+  </item>
+  <item nodeId="node-106">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190108 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-107"/>
+    </children>
+  </item>
+  <item nodeId="node-107">
+    <command xml:space="preserve">go through armory door</command>
+    <result xml:space="preserve">(first opening the Armory Door)&#x000A;It seems to be locked.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-108"/>
+    </children>
+  </item>
+  <item nodeId="node-108">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door and a guard key here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-109"/>
+    </children>
+  </item>
+  <item nodeId="node-109">
+    <command xml:space="preserve">take guard key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-110"/>
+    </children>
+  </item>
+  <item nodeId="node-110">
+    <command xml:space="preserve">go right</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-111"/>
+    </children>
+  </item>
+  <item nodeId="node-111">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-112"/>
+    </children>
+  </item>
+  <item nodeId="node-112">
+    <command xml:space="preserve">open armory door</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-113"/>
+    </children>
+  </item>
+  <item nodeId="node-113">
+    <command xml:space="preserve">unlock armory door</command>
+    <result xml:space="preserve">(with the guard key)&#x000A;You unlock the Armory Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-114"/>
+    </children>
+  </item>
+  <item nodeId="node-114">
+    <command xml:space="preserve">examine guard key</command>
+    <result xml:space="preserve">You see nothing special about the guard key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-115"/>
+    </children>
+  </item>
+  <item nodeId="node-115">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the Armory Door)&#x000A;&#x000A;Armory&#x000A;You can see an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-688">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190109 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door, an Armory Door, a statue of Din, a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-689"/>
+    </children>
+  </item>
+  <item nodeId="node-689">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-690"/>
+    </children>
+  </item>
+  <item nodeId="node-690">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Courtyard&#x000A;You can see a Boss Door, an Armory Door, a statue of Din, a statue of Farore and a statue of Naryu here.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-691"/>
+    </children>
+  </item>
+  <item nodeId="node-691">
+    <command xml:space="preserve">take statue</command>
+    <result xml:space="preserve">Which do you mean, the statue of Din, the statue of Farore or the statue of Naryu?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-692"/>
+    </children>
+  </item>
+  <item nodeId="node-692">
+    <command xml:space="preserve">din</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-116">
+    <command xml:space="preserve">0</command>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-117"/>
+    </children>
+  </item>
+  <item nodeId="node-117">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-118"/>
+    </children>
+  </item>
+  <item nodeId="node-118">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Did you ride a bear?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-119"/>
+    </children>
+  </item>
+  <item nodeId="node-119">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-120"/>
+    </children>
+  </item>
+  <item nodeId="node-120">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Selecting Profile 1&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190106 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Sanctum&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-121"/>
+    </children>
+  </item>
+  <item nodeId="node-121">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-122"/>
+    </children>
+  </item>
+  <item nodeId="node-122">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-123"/>
+    </children>
+  </item>
+  <item nodeId="node-123">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-124">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-125"/>
+    </children>
+  </item>
+  <item nodeId="node-125">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Did you ride a bear?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-126"/>
+    </children>
+  </item>
+  <item nodeId="node-126">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-127"/>
+    </children>
+  </item>
+  <item nodeId="node-127">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Selecting Profile 1&#x000A;Time passes.&#x000A;&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190108 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door and an Armory Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-128"/>
+      <child nodeId="node-129"/>
+      <child nodeId="node-132"/>
+      <child nodeId="node-137"/>
+      <child nodeId="node-140"/>
+    </children>
+  </item>
+  <item nodeId="node-128">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-129">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;Beginning Profile1&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-130"/>
+    </children>
+  </item>
+  <item nodeId="node-130">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-131"/>
+    </children>
+  </item>
+  <item nodeId="node-131">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Sanctum&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-132">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Guard Chamber&#x000A;You can see a Lockup Door, a metal chair, a metal table and a keyhook (on which is ] The guard key) here.&#x000A;&#x000A;Beginning Profile 1&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-133"/>
+    </children>
+  </item>
+  <item nodeId="node-133">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Dining Hall&#x000A;You can see a Korok Door, a dining table (on which is a bowl of fruit) and 8 chairs here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-134"/>
+    </children>
+  </item>
+  <item nodeId="node-134">
+    <command xml:space="preserve">take a chair</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-135"/>
+    </children>
+  </item>
+  <item nodeId="node-135">
+    <command xml:space="preserve">take chair</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-136"/>
+    </children>
+  </item>
+  <item nodeId="node-136">
+    <command xml:space="preserve">examine 8 chairs</command>
+    <result xml:space="preserve">You see nothing special about 8 chairs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-137">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Study&#x000A;Beginning Profile1&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-138"/>
+      <child nodeId="node-139"/>
+    </children>
+  </item>
+  <item nodeId="node-138">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Study&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-139">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-140">
+    <command xml:space="preserve">sleep</command>
+    <result xml:space="preserve">You aren't feeling especially drowsy.&#x000A;&#x000A;Beginning Profile 1&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-141"/>
+    </children>
+  </item>
+  <item nodeId="node-141">
+    <command xml:space="preserve">wake up</command>
+    <result xml:space="preserve">The dreadful truth is, this is not a dream.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-142">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-143"/>
+    </children>
+  </item>
+  <item nodeId="node-143">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">Did you ride a bear?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-144"/>
+    </children>
+  </item>
+  <item nodeId="node-144">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-145"/>
+    </children>
+  </item>
+  <item nodeId="node-145">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">Selecting Profile 1&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190107 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-146"/>
+    </children>
+  </item>
+  <item nodeId="node-146">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile 1&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-147">
+    <command xml:space="preserve">ye</command>
+    <result xml:space="preserve">Please answer yes or no.&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-148"/>
+    </children>
+  </item>
+  <item nodeId="node-148">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you revive your horse when it died?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-149"/>
+    </children>
+  </item>
+  <item nodeId="node-149">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you ride a bear?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-150"/>
+    </children>
+  </item>
+  <item nodeId="node-150">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Did you defeat the Calamity?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-151"/>
+    </children>
+  </item>
+  <item nodeId="node-151">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">Selecting Profile 16&#x000A;ProceduralStory&#x000A;An Interactive Fiction by Joe DeLuca&#x000A;Release 1 / Serial number 190107 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Courtyard&#x000A;You can see a Boss Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-152"/>
+    </children>
+  </item>
+  <item nodeId="node-152">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Time passes.&#x000A;&#x000A;Beginning Profile 16&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>

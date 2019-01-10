@@ -2,44 +2,60 @@
 
 Chapter 0 - Setup
 
+[Extensions]
+Include Armed by David Ratliff.
+
 Section 1 - Assets
 
-[Monsters, Items, and More]
+[Characters and Monsters]
+
+[Items and Kinds]
+A chair is a kind of supporter. A chair is enterable and portable[ and edible].
+A cell is a kind of container. A cell is enterable, openable, transparent, lockable, fixed in place, and closed. 
+A desk is a kind of supporter.
+
+The Master Sword is a sword.
 
 Section 2 - The Map
 
 [The Playing Map]
 Hyrule Castle is a region.
 
-[Characters and Monsters]
-A chair is a kind of supporter. A chair is enterable and portable. 
-A cell is a kind of container. A cell is enterable, openable, transparent, lockable, locked, and closed. 
-
 [Rooms]
-The Sanctum is a room in Hyrule Castle. The Throne is in the Sanctum. The Master Sword is in the Sanctum. 
+The Sanctum is a room in Hyrule Castle. The Throne is in the Sanctum. The throne is a chair. 
 
-The Study is a room in Hyrule Castle. A desk is in the Study. A note is on the desk. A pen is on the desk. A wooden chair is in the Study. It is a chair.
+The Study is a room in Hyrule Castle. A wooden desk is in the Study. A note is on the desk. A pen is on the desk. A wooden chair is in the Study. It is a chair.
 
 The Guard Chamber is a room in Hyrule Castle. A metal chair is in the Guard Chamber. It is a chair. A metal table is in the Guard Chamber. A keyhook is in Guard Chamber. The keyhook is fixed in place. The guard key is on the keyhook. 
 
-The Dining Hall is a room in Hyrule Castle. A dining table is in the Dining Hall. There are eight chairs in the DIning hall. A bowl of fruit is on the dining table. 
+The Dining Hall is a room in Hyrule Castle. A dining table is in the Dining Hall. There are eight chairs in the DIning hall. A bowl of fruit is on the dining table. There is a knife on the dining table. 
 
-The Library is a room in Hyrule Castle. A large bookshelf is in the library. [There are 100 books on the bookshelf.] There is a blue book on the bookshelf. The blue book is closed. The king's key is in the blue book. There is a plush chair in the Library. It is a chair. There is a fireplace in the Library. 
+The Library is a room in Hyrule Castle. A large bookshelf is in the library. There is a blue book on the bookshelf. The blue book is openable and closed. The king's key is in the blue book. There is a plush chair in the Library. It is a chair. There is a fireplace in the Library. 
 
-The Lockup is a room in Hyrule Castle. There are four cells in the Lockup. There is a big cell in the Lockup. The big cell is a cell.  Farore's pearl is in the big cell. 
+The Lockup is a room in Hyrule Castle. There are four cells in the Lockup. There is a big cell in the Lockup. The big cell is a locked cell.   Farore's pearl is in the big cell. 
 
 The Healing Spring is a room in Hyrule Castle. There is a bath in the Healing Spring. The bath is an enterable container. 
 
-The Armory is a room in Hyrule Castle. Din's Pearl is in the Armory.
+The Armory is a room in Hyrule Castle. There is an weapon rack in the armory. The armor rack is a supporter. There are five swords on the weapon rack. There are two bows on the weapon rack. There is a chest in the armory. The chest is a closed container. Din's Pearl is in the chest. The chest is openable.  
 
-The King's Chamber is a room in Hyrule Castle. Naryu's Pearl is in the King's Chamber. 
+The King's Chamber is a room in Hyrule Castle. The king's bed and an extravagent desk are in the King's Chamber. The king's bed is an enterable supporter. Naryu's Pearl is on the extravagent desk. 
 
-The Courtyard is a room in Hyrule Castle. 
+The Courtyard is a room in Hyrule Castle. [The master sword is in the Courtyard.] There is a statue of Din, a statue of Farore, and a statue of Naryu in the courtyard. The statue of din, the statue of farore, and the statue of naryu are supporters. 
 
 [Item rules and properties]
-The guard key unlocks the Lockup Door and the Armory Door. 
+The guard key unlocks the Lockup Door, the Armory Door, and the big cell. 
 The king's key unlocks the King Door. 
 The korok key unlocks the Korok Door. 
+
+Understand "din's statue" as statue of din. 
+Understand "farore's statue" as statue of farore.
+Understand "naryu's statue" as statue of naryu.
+
+[rule for opening boss door]
+Every turn when the player is in the courtyard: 
+	If din's pearl is on statue of din and naryu's pearl is on statue of naryu and farore's pearl is on statue of farore:
+		say "The Sanctum has opened.";
+		now the boss door is unlocked;
 
 [Connections]
 The Study is south of the Library.
