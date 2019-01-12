@@ -1,0 +1,4 @@
+base 	=> 	<item1><item2><item3>
+item1 	=> 	terminal1 | terminal2 | terminal3
+item2 	=> 	terminal2 | terminal3
+item3 	=>	terminal3

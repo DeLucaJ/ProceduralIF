@@ -1,5 +1,5 @@
 dir='./profiles/'
-script='generate.py'
+script='./python/generate.py'
 output='output.txt'
 
 rm $output
