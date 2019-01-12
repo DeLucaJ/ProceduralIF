@@ -1,0 +1,9 @@
+"ProceduralStory" by Joe DeLuca
+
+Chapter 0 - Test Chapeter
+
+[This should all be raw inform 7 with template subs]
+
+<base>
+
+The box is a room. "[If we have never visited the box]The box is a mostly blank space.[otherwise]Just an empty space."

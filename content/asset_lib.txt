@@ -1,0 +1,3 @@
+asset1	:	Inform Code Asset 1.'inform 7 string[rule]'
+asset2	:	Inform Code Asset 2.'inform 7 string[rule]'
+asset3	:	Inform Code Asset 3.'inform 7 string[rule]'

@@ -1,0 +1,50 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+name: DeLuca I7 asset library
+first_line_match: '^\w*\s*:'
+scope: source.example-c
+contexts:
+  main:
+    # declarations
+    - match: '\w*'
+      scope: entity.name.function
+
+    # operators
+    - match: ':'
+      scope: keyword.operator
+
+    # Strings begin and end with quotes, and use backslashes as an escape
+    # character
+    - match: '"'
+      scope: punctuation.definition.string.begin.example-c
+      push: double_quoted_string
+    - match: "'"
+      scope: punctuation.definition.string.begin.example-c
+      push: single_quoted_string
+
+    # Comments begin with a '//' and finish at the end of the line
+    - match: '//'
+      scope: punctuation.definition.comment.example-c
+      push: line_comment
+
+  double_quoted_string:
+    - meta_scope: string.quoted.double.example-c
+    - match: '\\.'
+      scope: constant.character.escape.example-c
+    - match: '"'
+      scope: punctuation.definition.string.end.example-c
+      pop: true
+  
+  single_quoted_string:
+    - meta_scope: string.quoted.double.example-c
+    - match: '\\.'
+      scope: constant.character.escape.example-c
+    - match: "'"
+      scope: punctuation.definition.string.end.example-c
+      pop: true
+
+  line_comment:
+    - meta_scope: comment.line.example-c
+    - match: $
+      pop: true
