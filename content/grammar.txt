@@ -1,4 +1,4 @@
-base	=>	<item1><item2><item3>
+base	=>	<item1> <item2> <item3>
 item1	=>	asset1 | asset2 | asset3
 item2	=>	asset2 | asset3
 item3	=>	asset3
