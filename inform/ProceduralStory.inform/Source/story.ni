@@ -76,4 +76,61 @@ When play begins:
 			say "Selecting Profile 8";
 			now Profile is 8;
 	say "[line break]Link has [Heroism] heroism";
+	
+Chapter 2 - Scenes
+
+Section 0 - Declaration of Scenes
+
+][Scene-switch is a number that varies. Scene-switch is 0.]
+
+Introduction is a Scene. Introduction begins when play begins.
+[Endings for Introduction.....]
+Introduction ends neglectfully when Profile is 1. 
+Introduction ends semi-neglectfully when Profile is 2. 
+Introduction ends barely-neglectfully when Profile is 3. 
+Introduction ends kinda-neglectfully when Profile is 4. 
+Introduction ends kinda-heroically when Profile is 5. 
+Introduction ends barely-heroically when Profile is 6. 
+Introduction ends semi-heroically when Profile is 7. 
+Introduction ends heroically when Profile is 8. 
+
+Profile1 is a scene. Profile1 begins when Introduction ends neglectfully. 
+Profile2 is a scene. Profile2 begins when Introduction ends semi-neglectfully. 
+Profile3 is a scene. Profile3 begins when Introduction ends barely-neglectfully. 
+Profile4 is a scene. Profile4 begins when Introduction ends kinda-neglectfully. 
+Profile5 is a scene. Profile5 begins when Introduction ends kinda-heroically. 
+Profile6 is a scene. Profile6 begins when Introduction ends barely-heroically. 
+Profile7 is a scene. Profile7 begins when Introduction ends semi-heroically. 
+Profile8 is a scene. Profile8 begins when Introduction ends heroically. 
+
+Section 1 - Scene Rules
+
+When Introduction Begins:
+	say "Beginning Intro.";
+
+When Profile1 Begins:
+	say "Beginning Profile1.";
+
+When Profile2 Begins:
+	say "Beginning Profile2.";
+
+When Profile3 Begins:
+	say "Beginning Profile3.";
+
+When Profile4 Begins:
+	say "Beginning Profile4.";
+	
+When Profile5 Begins:
+	say "Beginning Profile5.";
+	
+When Profile6 Begins:
+	say "Beginning Profile6.";
+	
+When Profile7 Begins:
+	say "Beginning Profile7.";
+	
+When Profile8 Begins:
+	say "Beginning Profile8.";
+	
+
 

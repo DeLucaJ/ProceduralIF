@@ -1,3 +1,18 @@
-asset1	:	Inform Code Asset 1.'inform 7 string[rule]'
-asset2	:	Inform Code Asset 2.'inform 7 string[rule]'
-asset3	:	Inform Code Asset 3.'inform 7 string[rule]'
+intro_d :   Introduction is a Scene. Introduction begins when play begins. Introduction ends neglectfully when Profile is 1. Introduction ends semi-neglectfully when Profile is 2. Introduction ends barely-neglectfully when Profile is 3. Introduction ends kinda-neglectfully when Profile is 4. Introduction ends kinda-heroically when Profile is 5. Introduction ends barely-heroically when Profile is 6. Introduction ends semi-heroically when Profile is 7. Introduction ends heroically when Profile is 8.  
+p1_d    :
+p2_d    :
+p3_d    :
+p4_d    :
+p5_d    :
+p6_d    :
+p7_d    :
+p8_d    :
+intro_r :  
+p1_ra   :
+p2_ra   :
+p3_ra   :
+p4_ra   :
+p5_ra   :
+p6_ra   :
+p7_ra   :
+p8_ra   :
