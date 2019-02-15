@@ -1,9 +1,10 @@
 import sys
 import re
 import random
-from string import Template
+import string
 
-# Constants
+#Constants
+CONTENT_DIR = "./content/"
 GRAMMAR_TERM = r"<\S*>"	# Regular Expression for terms in grammar
 NON_TERMINAL = r"\$\S*"	# Regular Expression for non_terminal in template form
 
@@ -22,7 +23,9 @@ class gdict(dict):
 def grammar_to_template(line):
 	'''
 	Takes in a grammar string and makes it into string template format
+	
 	@param line:	a string in grammar format
+	
 	@return tline: 	line in template format
 	'''
 	tline = line[:]
@@ -34,76 +37,38 @@ def grammar_to_template(line):
 
 	return tline
 
-def read_declaration(file):
-	'''
-	Takes in a file and returns a declaration string from the grammar
-	Throws error when file is not properly formatted 
-	@param file: 	the file to be read
-	@return declaration: the string containing the declaration
-	'''
-	decl = ""
-
-	while (not decl.endswith("}")):
-		#read input
-		char = file.read(1)
-
-		if not char:
-			break
-
-		decl += char
-
-	return decl
-
-def read_declarations(file):
-	'''
-	Reads all the declarations in a file
-	@param file: the file to be read
-	@return declarations: a list of strings formatted as declarations
-	'''
-	decls = list()
-
-	while True:
-		decl = read_declaration(file)
-		if not decl:
-			break
-		decls.append(decl)
-
-	return decls
-
-def parse(file):
+def parse_grammar(gfile):
 	'''
 	Parses a file and outputs the grammar as a dictionary
 
 	@param file:	an open file
-	@return: 		a dictionary(grammar) and a string (start_key) variable
+	@return: 		a grammar dictionary and a string (start_key) variable
 	'''
 	grammar = gdict()
 	start_key = ""
 
-	# grab declarations and convert into grammar entry
-	decls = read_declarations(file)
+	line = gfile.readline()
+	while (line != ""):
+		line = line.strip()
 
-	for decl in decls:
-		decl = decl.strip()
-
-		# check format (could probably get more technical)
-		if (not decl.endswith("}")) or ("::=" not in decl):
-			print("Grammar improperly formatted", file=sys.stderr)
+		# Check format
+		if ("=>" not in line):
+			print("Grammar imperly formatted", file=sys.stderr)
 			sys.exit(1)
 
 		# split key and values
-		item = decl.split("::=")
+		item = line.split("=>")
 
-		# add key to grammar entry
-		# If its the first, make it the start_key
+		# add key to grammar
+		# 	If it is the first key, make it the start_key
 		key = item[0].strip()
 		if not start_key:
 			start_key = key
 		if key not in grammar.keys():
 			grammar[key] = list()
 
-		# convert values, delimit by '|'
-		values = grammar_to_template(item[1].strip('{}\t\n \r\v'))
+		# delimt by '|'
+		values = grammar_to_template(item[1].strip())
 		values = values.split("|")
 
 		# add values to grammar
@@ -111,67 +76,138 @@ def parse(file):
 			value = value.strip()
 			grammar.getList(key).append(value)
 
+		line = gfile.readline()
+
 	return (grammar, start_key)
 
-def interpret(grammar, start_key):
+def parse_assets(afile):
+	'''
+	Parses a file and outputs the assets as a dicitonary
+
+	@param file:	an open file
+	@return: 		a asset dictionary
+	'''
+	assets = dict()
+
+	line = afile.readline()
+	while (line != ""):
+		line = line.strip()
+
+		# check format
+		if (":" not in line):
+			print("Asset Lib improperly formated")
+			sys.exit()
+		
+		# split key and values
+		item = line.split(":")
+
+		#add key to assets
+		key = item[0].strip()
+		assets[key] = item[1].strip()
+
+		line = afile.readline()
+
+	return assets
+
+def interpret_grammar(grammar, start_key, assets):
 	'''
 	Takes a dictionary grammar and turns it into a string of Inform7 code
 
-	@param grammar: 	a dictionary grammar
-	@paran start_key:	the key that begins the grammar
-	@return: 			a string to be placed in Inform7
+	@param grammar: a grammar dictionary
+	@param start_key: the beginning key in the grammar
+	@param assets: an asset dictionary
+
+	@return: a string of output 
 	'''
-	# initialize profile as the first line of the grammar
-	profile = grammar[start_key][:]
+	output = grammar[start_key][:]
+	
+	while re.search(NON_TERMINAL, output):
+		output = string.Template(output).substitute(grammar)
 
-	# Loop until there are no more non-terminals
-	while re.search(NON_TERMINAL, profile):
-		#likely needs mitches structure
-		profile = Template(profile).substitute(grammar)
+	output = output.split()
 
-	return profile
+	# replace terminals (hopefully \n delimitted) with corresponding assets 
+	replaced = ""
+	for item in output:
+		replaced += assets[item] + "\n"
+
+	return replaced
+
+def fill_template(tfile, anchor):
+	'''
+	Fills the template using 
+
+	@param tfile: the template file
+	@param grammar: the grammar with asset keys
+	@param assets: the asset dictionary
+
+	@return filled template
+	'''
+	output = ""
+
+	# put entire tfile into output
+	output = tfile.read()
+
+	# put the grammar into the template
+	output = string.Template(output).substitute(anchor)
+
+	return output	
 
 def main():
-	'''
-	Opens the given file names,
-	parses them into grammars,
-	interprets grammars into Inform7 code,
-	outputs an Inform7 file
-	'''
-	files = []
-	grammars = []
-	profiles = []
+	g = ""
+	a = ""
+	t = ""
 
-	# parse arguments 
-	if len(sys.argv) < 2:
-		print("No files provided. Looking for default, 'grammar.txt'")
-		files.append("grammar.txt")
-	else: 
+	# process arguments PROBABLY NEEDS WORK
+	if len(sys.argv) != 4:
+		print("Improper number of files.")
+		print("Looking for 'template.txt', 'asset_lib.txt', and 'grammar.txt'")
+		g = CONTENT_DIR + "grammar.txt"
+		a = CONTENT_DIR + "asset_lib.txt"
+		t = CONTENT_DIR + "template.txt"
+	else: 	
 		# add all arguments to list of files
-		for arg in sys.argv[1:]:
-			files.append(arg)
+		g = sys.argv[1]
+		a = sys.argv[2]
+		t = sys.argv[3]
+		
 
-	# parse all files into grammars
-	for file in files:
-		# make sure the file exists
-		try:
-			f = open(file, "r")
-		except:
-			print("'" + file + "' not found")
-			continue #sys.exit()
+	# parse file into grammar
+	try:
+		gfile = open(g, "r")
+	except:
+		print("Grammar definition '" + g + "' not found", file=sys.stderr)
+		sys.exit()
 
-		grammar = parse(f)
-		grammars.append(grammar)
+	grammar = parse_grammar(gfile)
+	gfile.close()
 
-		f.close()
+	# parse asset library
+	try:
+		afile = open(a, "r")
+	except:
+		print("Asset Library '" + a + "' not found.", file=sys.stderr)
+		sys.exit()
 
-	# turn grammars into profiles
-	for grammar in grammars:
-		profiles.append(interpret(grammar[0], grammar[1]))
+	assets = parse_assets(afile)
+	afile.close()
 
-	# put profiles into and Inform7 file
-	for profile in profiles:
-		print(profile)
+	# fill template
+	try:
+		tfile = open(t, "r")
+	except:
+		print("Template file '" + t + "' not found.", file=sys.stderr)
+		sys.exit()
+
+	anchor = dict()
+
+	anchor["anchor"] = interpret_grammar(grammar[0], grammar[1], assets)
+
+	output = fill_template(tfile, anchor)
+	tfile.close
+
+	# output the string
+	print(output)
 
 if __name__ == '__main__':
 	main()
