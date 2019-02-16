@@ -1,7 +1,7 @@
 script='./python/generate.py'
 grammar='./content/grammar.txt'
 assets='./content/asset_lib.txt'
-template='./template.txt'
+template='./content/template.txt'
 output='output.txt'
 #dir='./profiles/'
 
