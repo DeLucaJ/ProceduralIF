@@ -25,28 +25,28 @@
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/home/joseph/Development/csc/570/ProceduralIF/inform/ProceduralStory.inform/Source/story.ni</string>
-        <key>Line</key><integer>22</integer>
+        <key>Line</key><integer>28</integer>
         <key>Title</key><string>Chapter 1 - Questions</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/home/joseph/Development/csc/570/ProceduralIF/inform/ProceduralStory.inform/Source/story.ni</string>
-        <key>Line</key><integer>80</integer>
+        <key>Line</key><integer>86</integer>
         <key>Title</key><string>Chapter 2 - Scenes</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/home/joseph/Development/csc/570/ProceduralIF/inform/ProceduralStory.inform/Source/story.ni</string>
-        <key>Line</key><integer>82</integer>
+        <key>Line</key><integer>88</integer>
         <key>Title</key><string>Section 0 - Declaration of Scenes</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/home/joseph/Development/csc/570/ProceduralIF/inform/ProceduralStory.inform/Source/story.ni</string>
-        <key>Line</key><integer>104</integer>
+        <key>Line</key><integer>112</integer>
         <key>Title</key><string>Section 1 - Scene Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>

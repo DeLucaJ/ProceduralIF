@@ -11,13 +11,36 @@ South Side is a room.
 West Side is a room.
 Bell Tower is a room.
 Roof is a room.
+Spring of Power is a room. 
+Spring of Wisdom is a room. 
+Spring of Courage is a room. 
+Secret Chamber is a room. 
 
+Secret Staircase is a door. Secret staircase is up from the Secret Chamber. Secret Staircase is down from the temple of time. Secret Staircase is lockable and locked. 
+
+[Bell Tower Descriptions and Items]
 Bell Tower is up from the Temple of Time.
+
+[Roof Descriptions and Items]
 Roof is up from the Bell Tower, up from the North Side, up from the South Side, up from the East Side, up from the West Side. 
+
+[North Side Descriptions and Items]
 North Side is north of Temple of Time, north of the Roof, north of East Side, and north of West Side.
+
+[East Side Descriptions and Items]
 East Side is east of Temple of Time, east of the Roof, east of the South Side, and east of the North Side.
-West Side is west of Temple of Time, west of the Roof, west of the South Side, and west of North Side.  
+
+[West Side Descriptions and Items]
+West Side is west of Temple of Time, west of the Roof, west of the South Side, and west of North Side.
+
+[South Side Descriptions and Items]
 South Side is south of Temple of Time, south of the Roof, south of the West Side, south of the East Side.
+
+[Spring of Power Rules, Descriptions, & Items]
+
+[Spring of Wisdom Rules, Descriptions, & Items]
+
+[Spring of Courage Rules, Descriptions, & Items]
 
 Chapter  1 - Questions 
 
@@ -81,7 +104,7 @@ Chapter 2 - Scenes
 
 Section 0 - Declaration of Scenes
 
-][Scene-switch is a number that varies. Scene-switch is 0.]
+[Scene-switch is a number that varies. Scene-switch is 0.]
 
 Introduction is a Scene. Introduction begins when play begins.
 [Endings for Introduction.....]
