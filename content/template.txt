@@ -8,9 +8,6 @@ Include Armed by David Ratliff.
 Include Basic Screen Effects by Emily Short.
 Use serial comma.
 
-[release notes]
-Release along with source text, cover art, a website, an interpreter, and a file of "Hyrule Castle Intro" called "HyruleCastleIntro.pdf". 
-
 Chapter 1 - Items
 
 Section 1 - Kinds
@@ -22,6 +19,7 @@ A statue is a kind of supporter.
 A food is a kind of thing. A food is edible. A food has a number called nutrition. The nutrition of a food is usually 10. 
 A room has a number called the calamity. The calamity of a room is usually 0. 
 A bottle is a kind of container. 
+The mysterious chest is a container. The busted chest is a container. The golden chest is a container. 
 
 Section 2 - Special Items
 

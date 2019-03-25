@@ -8,9 +8,6 @@ Include Armed by David Ratliff.
 Include Basic Screen Effects by Emily Short.
 Use serial comma.
 
-[release notes]
-Release along with source text, cover art, a website, an interpreter, and a file of "Hyrule Castle Intro" called "HyruleCastleIntro.pdf". 
-
 Chapter 1 - Items
 
 Section 1 - Kinds
@@ -22,6 +19,7 @@ A statue is a kind of supporter.
 A food is a kind of thing. A food is edible. A food has a number called nutrition. The nutrition of a food is usually 10. 
 A room has a number called the calamity. The calamity of a room is usually 0. 
 A bottle is a kind of container. 
+The mysterious chest is a container. The busted chest is a container. The golden chest is a container. 
 
 Section 2 - Special Items
 
@@ -512,94 +510,88 @@ Profile8 is a scene. Profile8 begins when Introduction ends heroically.
 When Introduction Begins:
 	say "Beginning Intro";
 	change the north exit of north side to secret cave;
-	Let chosen sword be a random stone sword in limbo; now chosen sword is in the secret cave;
-	let chosen melon be a random melon in Limbo; now chosen melon is in the secret cave;
+	let chosen sword be a random wooden sword in limbo; now chosen sword is in the secret cave;
+	let chosen banana be a random banana in limbo; now chosen banana is in the secret cave;
 When Profile1 Begins:
-	say "Entering Profile1"; now the player is in the courtyard;
+	say "Entering Profile1";
 	now korok1 is mischevious;
 	now korok1 is in the dining hall;
-	let chosen sword be a random forest sword in limbo; now korok1 carries chosen sword;
-	now dodongo is in trial of power;
-
-
-	let chosen darknut be a random darknut in Limbo; now chosen darknut is in trial of courage;
-When Profile2 Begins:
-	say "Entering Profile2"; now the player is in the courtyard;
-	now the player has the master sword;
-	now korok1 is mischevious;
-	now korok1 is in the library;
-	let chosen sword be a random forest sword in limbo; now korok1 carries chosen sword;
-	now dodongo is in trial of power;
-
-
-	let chosen darknut be a random darknut in Limbo; now chosen darknut is in trial of courage;
-When Profile3 Begins:
-	say "Entering Profile3"; now the player is in the courtyard;
-	increase the max health of player by 50;
-	increase the present health of player by 50;
-	now korok1 is mischevious;
-	now korok1 is in the royal chamber;
-	let chosen fruit be a random forest heart in limbo; now korok1 carries chosen fruit;
+	let chosen bow be a random forest bow in limbo; now korok1 carries chosen bow;
 	now gohma is in trial of power;
-
-
-	let chosen moblin be a random moblin in Limbo; now chosen moblin is in trial of courage;
-When Profile4 Begins:
-	say "Entering Profile4"; now the player is in the courtyard;
+	say "Missing Rule[line break]";
+	say "Missing Rule[line break]";
+When Profile2 Begins:
+	say "Entering Profile2";
 	now the player has the master sword;
-	increase the max health of player by 50;
-	increase the present health of player by 50;
-	now korok1 is sad;
-	now korok1 is in the royal chamber;
-	let chosen fruit be a random forest heart in limbo; now korok1 carries chosen fruit;
-	now dodongo is in trial of power;
-
-
-	let chosen moblin be a random moblin in Limbo; now chosen moblin is in trial of courage;
-When Profile5 Begins:
-	say "Entering Profile5"; now the player is in the courtyard;
-	now the player has the bow of light;
 	now korok1 is mischevious;
-	now korok1 is in the kitchen;
-	let chosen sword be a random forest sword in limbo; now korok1 carries chosen sword;
-	now dodongo is in trial of power;
-
-
-	let chosen moblin be a random moblin in Limbo; now chosen moblin is in trial of courage;
-When Profile6 Begins:
-	say "Entering Profile6"; now the player is in the courtyard;
-	now the player has the bow of light;
-	now the player has the master sword;
-	now korok1 is sad;
 	now korok1 is in the lockup;
 	let chosen bow be a random forest bow in limbo; now korok1 carries chosen bow;
 	now gohma is in trial of power;
-
-
+	say "Missing Rule[line break]";
 	let chosen darknut be a random darknut in Limbo; now chosen darknut is in trial of courage;
-When Profile7 Begins:
-	say "Entering Profile7"; now the player is in the courtyard;
-	now the player has the bow of light;
+When Profile3 Begins:
+	say "Entering Profile3";
+	increase the max health of player by 50;
+	increase the present health of player by 50;
+	now korok1 is mischevious;
+	now korok1 is in the lockup;
+	let chosen bow be a random forest bow in limbo; now korok1 carries chosen bow;
+	now gohma is in trial of power;
+	say "Missing Rule[line break]";
+	say "Missing Rule[line break]";
+When Profile4 Begins:
+	say "Entering Profile4";
+	now the player has the master sword;
 	increase the max health of player by 50;
 	increase the present health of player by 50;
 	now korok1 is sad;
 	now korok1 is in the guard chamber;
-	let chosen sword be a random forest sword in limbo; now korok1 carries chosen sword;
+	let chosen bow be a random forest bow in limbo; now korok1 carries chosen bow;
 	now dodongo is in trial of power;
-
-
+	say "Missing Rule[line break]";
+	let chosen moblin be a random moblin in Limbo; now chosen moblin is in trial of courage;
+When Profile5 Begins:
+	say "Entering Profile5";
+	now the player has the bow of light;
+	now korok1 is mischevious;
+	now korok1 is in the study;
+	let chosen fruit be a random forest heart in limbo; now korok1 carries chosen fruit;
+	now gohma is in trial of power;
+	say "Missing Rule[line break]";
+	let chosen moblin be a random moblin in Limbo; now chosen moblin is in trial of courage;
+When Profile6 Begins:
+	say "Entering Profile6";
+	now the player has the bow of light;
+	now the player has the master sword;
+	now korok1 is sad;
+	now korok1 is in the dining hall;
+	let chosen fruit be a random forest heart in limbo; now korok1 carries chosen fruit;
+	now gohma is in trial of power;
+	say "Missing Rule[line break]";
+	let chosen moblin be a random moblin in Limbo; now chosen moblin is in trial of courage;
+When Profile7 Begins:
+	say "Entering Profile7";
+	now the player has the bow of light;
+	increase the max health of player by 50;
+	increase the present health of player by 50;
+	now korok1 is sad;
+	now korok1 is in the lockup;
+	let chosen bow be a random forest bow in limbo; now korok1 carries chosen bow;
+	now dodongo is in trial of power;
+	say "Missing Rule[line break]";
+	say "Missing Rule[line break]";
 When Profile8 Begins:
-	say "Entering Profile8"; now the player is in the courtyard;
+	say "Entering Profile8";
 	now the player has the bow of light;
 	now the player has the master sword;
 	increase the max health of player by 50;
 	increase the present health of player by 50;
 	now korok1 is happy;
-	now korok1 is in the kitchen;
-	let chosen fruit be a random forest heart in limbo; now korok1 carries chosen fruit;
+	now korok1 is in the library;
+	let chosen sword be a random forest sword in limbo; now korok1 carries chosen sword;
 	now gohma is in trial of power;
-
-
+	say "Missing Rule[line break]";
+	say "Missing Rule[line break]";
 
 
 
