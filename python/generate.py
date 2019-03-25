@@ -50,10 +50,10 @@ def parse_grammar(gfile):
 	line = gfile.readline()
 	while (line != ""):
 		line = line.strip()
-
+		
 		# Check format
 		if ("=>" not in line):
-			print("Grammar imperly formatted", file=sys.stderr)
+			print("Grammar improperly formatted", file=sys.stderr)
 			sys.exit(1)
 
 		# split key and values
@@ -94,16 +94,19 @@ def parse_assets(afile):
 		line = line.strip()
 
 		# check format
-		if (":" not in line):
+		if ("=:" not in line):
 			print("Asset Lib improperly formated")
 			sys.exit()
 		
 		# split key and values
-		item = line.split(":")
+		item = line.split("=:")
 
 		#add key to assets
 		key = item[0].strip()
-		assets[key] = item[1].strip()
+		asset = item[1].strip()
+		if (";" in asset): 
+			asset = "\t" + asset
+		assets[key] = asset
 
 		line = afile.readline()
 

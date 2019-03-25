@@ -81,52 +81,106 @@ Chapter 2 - Scenes
 
 Section 0 - Declaration of Scenes
 
-Introduction is a Scene. Introduction begins when play begins. Introduction ends neglectfully when Profile is 1. Introduction ends semi-neglectfully when Profile is 2. Introduction ends barely-neglectfully when Profile is 3. Introduction ends kinda-neglectfully when Profile is 4. Introduction ends kinda-heroically when Profile is 5. Introduction ends barely-heroically when Profile is 6. Introduction ends semi-heroically when Profile is 7. Introduction ends heroically when Profile is 8.
+	change the north exit of north side to secret cave;
+	now there is a wooden sword in the secret cave;
+	now there is an apple in the secret cave;
+	now there is a tree in south side;
+	now there is a tree in west side;
+	now there is a tree in east side;
+Introduction is a Scene. Introduction begins when play begins. Introduction ends neglectfully when Profile is 1. Introduction ends courageously when Profile is 2. Introduction ends wisely when Profile is 3. Introduction ends sagely when Profile is 4. Introduction ends powerfully when Profile is 5. Introduction ends leaderly when Profile is 6. Introduction ends strategically when Profile is 7. Introduction ends heroically when Profile is 8.
 Profile1 is a scene. Profile1 begins when Introduction ends neglectfully.
-Profile2 is a scene. Profile2 begins when Introduction ends semi-neglectfully.
-Profile3 is a scene. Profile3 begins when Introduction ends barely-neglectfully.
-Profile4 is a scene. Profile4 begins when Introduction ends kinda-neglectfully.
-Profile5 is a scene. Profile5 begins when Introduction ends kinda-heroically.
-Profile6 is a scene. Profile6 begins when Introduction ends barely-heroically.
-Profile7 is a scene. Profile7 begins when Introduction ends semi-heroically.
+Profile2 is a scene. Profile2 begins when Introduction ends courageously.
+Profile3 is a scene. Profile3 begins when Introduction ends wisely.
+Profile4 is a scene. Profile4 begins when Introduction ends sagely.
+Profile5 is a scene. Profile5 begins when Introduction ends powerfully.
+Profile6 is a scene. Profile6 begins when Introduction ends leaderly.
+Profile7 is a scene. Profile7 begins when Introduction ends strategically.
 Profile8 is a scene. Profile8 begins when Introduction ends heroically.
-
-
-
-
-
-
-
-
-
-
-
-Section 1 - Scene Rules
-
 When Introduction Begins:
-	say "Beginning Intro.";
-
+	say "Beginning Intro"; now the player is in the courtyard;
 When Profile1 Begins:
-	say "Beginning Profile1.";
+	say "Entering Profile1"; now the player is in the courtyard;
+	now korok1 is mischevious;
+	now korok1 is in the library;
+	now korok1 has a heart fruit;
+	now volvagia is in trial of power;
+
 
 When Profile2 Begins:
-	say "Beginning Profile2.";
+	say "Entering Profile2"; now the player is in the courtyard;
+	now the player has the master sword;
+	now korok1 is mischevious;
+	now korok1 is in the guard chamber;
+	now korok1 has a korok sword;
+	now dodongo is in trial of power;
+
 
 When Profile3 Begins:
-	say "Beginning Profile3.";
+	say "Entering Profile3"; now the player is in the courtyard;
+	increase the max health of player by 50;
+	increase the present health of player by 50;
+	now korok1 is mischevious;
+	now korok1 is in the royal chamber;
+	now korok1 has a heart fruit;
+	now dodongo is in trial of power;
+
 
 When Profile4 Begins:
-	say "Beginning Profile4.";
-	
+	say "Entering Profile4"; now the player is in the courtyard;
+	now the player has the master sword;
+	increase the max health of player by 50;
+	increase the present health of player by 50;
+	now korok1 is sad;
+	now korok1 is in the library;
+	now korok1 has a heart fruit;
+	now volvagia is in trial of power;
+
+
 When Profile5 Begins:
-	say "Beginning Profile5.";
-	
+	say "Entering Profile5"; now the player is in the courtyard;
+	now the player has the bow of light;
+	now korok1 is mischevious;
+	now korok1 is in the guard chamber;
+	now korok1 has a korok bow;
+	now dodongo is in trial of power;
+
+
+	now phantom ganon is in trial of courage;
 When Profile6 Begins:
-	say "Beginning Profile6.";
-	
+	say "Entering Profile6"; now the player is in the courtyard;
+	now the player has the bow of light;
+	now the player has the master sword;
+	now korok1 is sad;
+	now korok1 is in the kitchen;
+	now korok1 has a heart fruit;
+	now dodongo is in trial of power;
+
+
 When Profile7 Begins:
-	say "Beginning Profile7.";
-	
+	say "Entering Profile7"; now the player is in the courtyard;
+	now the player has the bow of light;
+	increase the max health of player by 50;
+	increase the present health of player by 50;
+	now korok1 is sad;
+	now korok1 is in the royal chamber;
+	now korok1 has a korok sword;
+	now volvagia is in trial of power;
+
+
+	now dark link is in trial of courage;
 When Profile8 Begins:
-	say "Beginning Profile8.";
-	
+	say "Entering Profile8"; now the player is in the courtyard;
+	now the player has the bow of light;
+	now the player has the master sword;
+	increase the max health of player by 50;
+	increase the present health of player by 50;
+	now korok1 is happy;
+	now korok1 is in the armory;
+	now korok1 has a heart fruit;
+	now gohma is in trial of power;
+
+
+	now phantom ganon is in trial of courage;
+
+
+

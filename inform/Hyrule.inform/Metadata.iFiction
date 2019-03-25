@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
+    <story>
+        <identification>
+            <ifid>41B517BD-E538-487D-8549-62CBD9D75626</ifid>
+            <format>zcode</format>
+        </identification>
+        <bibliographic>
+            <title>Hyrule Castle</title>
+            <author>Joe DeLuca</author>
+            <headline>An Interactive Fiction</headline>
+            <genre>Fiction</genre>
+            <firstpublished>2019</firstpublished>
+            <language>en</language>
+            <group>Inform</group>
+        </bibliographic>
+        <resources>
+            <auxiliary>
+                <leafname>HyruleCastleIntro.pdf</leafname>
+                <description>Hyrule Castle Intro</description>
+            </auxiliary>
+        </resources>
+        <cover>
+            <format>jpg</format>
+            <height>439</height>
+            <width>500</width>
+            <description>The cover art.</description>
+        </cover>
+        <releases>
+            <attached>
+                <release>
+                    <releasedate>2019-03-24</releasedate>
+                    <version>1</version>
+                    <compiler>Inform 7</compiler>
+                    <compilerversion>6M62</compilerversion>
+                </release>
+            </attached>
+        </releases>
+        <colophon>
+            <generator>Inform 7</generator>
+            <generatorversion>6M62</generatorversion>
+            <originated>2019-03-24</originated>
+        </colophon>
+        <zcode>
+            <serial>190324</serial>
+            <release>1</release>
+            <compiler>Inform 7 build 6M62</compiler>
+            <coverpicture>1</coverpicture>
+        </zcode>
+    </story>
+</ifindex>

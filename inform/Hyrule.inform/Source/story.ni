@@ -1,0 +1,496 @@
+"Hyrule Castle" by Joe DeLuca
+
+Part 0 - Setup
+
+Chapter 0 - Extensions & Options
+
+Include Armed by David Ratliff.
+Include Basic Screen Effects by Emily Short.
+Use serial comma.
+
+[release notes]
+Release along with source text, cover art, a website, an interpreter, and a file of "Hyrule Castle Intro" called "HyruleCastleIntro.pdf". 
+
+Chapter 1 - Items
+
+Section 1 - Kinds
+
+A chair is a kind of supporter. A chair is enterable and portable.
+A cell is a kind of container. A cell is enterable, openable, transparent, lockable, fixed in place, and closed. 
+A table is a kind of supporter. A table is enterable. 
+A statue is a kind of supporter. 
+A food is a kind of thing. A food is edible. A food has a number called nutrition. The nutrition of a food is usually 10. 
+A room has a number called the calamity. The calamity of a room is usually 0. 
+A bottle is a kind of container. 
+
+Section 2 - Special Items
+
+A fork is a kind of knife. The maximum damage of a fork is always 18. The description of a fork is usually "An eating utensil for stabbing."
+A spoon is a kind of knife. The maximum damage of a spoon is always 16. The description of a spoon is usually "A eating utensil scooping."
+A sharp branch is a kind of blade. The maximum damage of a sharp branch is always 15. The description of a spoon is usually "A branch sharp enough to do some damage."
+A broad sword is a kind of blade. The maximum damage of a broad sword is 30. The description of a broad sword is always "A massive sword taken from a fallen darknut.".
+A moblin spear is a kind of blade. The description of a moblin spear is always "A crude but highly effective spear used by moblins.". 
+The Master Sword is a sword. "The fabled [Master Sword]. The sword that will seal away the calamity once and for all.  The calamity fades away in its presence." The maximum damage of the master sword is 50. The master sword unlocks the Grand Entrance. 
+[Bow of Light stuff here]
+The Bow of Light is a bow. 
+The Bomb Bow is a bow.
+
+The pedestal is a supporter. "The resting place of the [Master Sword] where it waits for the chosen hero to claim it." The Master Sword is on the pedestal. 
+
+Chapter 2 - Rules 
+
+[check a body rule]
+After examining a dead person (called target):
+	say "[target][apostrophe]s body has [a list of things carried by target]";
+
+[Status bar]
+To say pearls placed:
+	say "Pearls Placed: [if din's pearl is fixed in place](D)[default letters][end if][if nayru's pearl is fixed in place][blue letters](N)[default letters][end if][if farore's pearl is fixed in place][green letters](F)[default letters][end if]";
+	
+[Health color][Will need to change if health cap changes]
+To say display health:
+	say "[if the present health of the player is greater than 50][green letters][present health of player][default letters][otherwise if the present health of the player is greater than 25][yellow letters][present health of player][default letters][otherwise][red letters][present health of player][default letters][end if]"
+
+Table of Stats
+left	central	right
+"Health: [display health]"	"[location]"	"Turn: [turn count]"
+"[pearls placed]"	"[calamity of location]"	""	
+
+Rule for constructing the status line:
+	now right alignment depth is 10; [So the turn count is not awkwardly far away]
+	fill status bar with Table of Stats;
+	rule succeeds.
+
+Every Turn:
+	If the present health of the player is less than 0 or the present health of the player is 0:
+		end the story saying "You have died";
+
+Every turn when the calamity of the location is greater than 0:
+	If the player has the master sword:
+		say "The [Master Sword] glows brightly and purifies this location. There is no longer calamity in this location.";
+		now the calamity of the location is 0;
+	otherwise:
+		decrease the present health of the player by the calamity of the location;
+		say "You took [calamity of the location] damage from the calamity. Your current health is [present health of the player].";
+	
+[Place is Put]
+Understand "place [something] on [a supporter]" or "return [something]  to [a supporter]" as putting it on;
+
+[life or death rule]
+Definition: A person is alive if they are not dead;
+
+[Food rule]
+After eating a food (called snack):
+	Increase the present health of the player by the nutrition of the noun;
+	say "You ate [snack] and restored health!";
+	If the present health of the player is greater than max health of player:
+		now the present health of the player is max health of player;
+		
+[Victory Rule][Needs to be about fighting Ganon]
+Every Turn:
+	If Ganon is dead:
+		end the story finally saying "You defeated Ganon and conquered the calamity!";
+	
+Chapter 3 - Map
+
+Section 1 - Regions
+
+Temple Grounds is a region.
+Hyrule Castle is a region. 
+The Trials is a region. 
+
+Section 2 - Rooms
+
+[TEMPLE GROUNDS----------------------------------------------------------------------------------------------------]
+[Temple of Time]
+Temple of Time is a room in temple grounds. 
+
+[North Side]
+North Side is a room in temple grounds. 
+
+[South Side]
+South Side is a room in temple grounds. 
+
+[West Side]
+West Side is a room in temple grounds
+
+[East Side]
+East Side is a room in temple grounds. 
+
+[Secret Cave]
+The Secret Cave is a room in Temple Grounds. There is an Old Man in the Secret Cave.
+
+After going to the secret cave for the first time:
+	say "Its dangerous to go alone, take these.";
+
+[HYRULE CASTLE----------------------------------------------------------------------------------------------------]
+[The Sanctum]
+The Sanctum is a room in hyrule castle. "A massive, round chamber with a [throne]  at its back. Above the [throne] is an ornate [stained glass window]. [line break] [line break]The [Courtyard] is to the south, through the [Grand Entrance].". The throne is in the sanctum. "A throne adorned with jewels and precious metals. This is where the King would sit. It is built into the floor.". the throne is a chair that is fixed in place. The stained glass window is in the sanctum. "The window depicts the goddess Hylia holding the Triforce above her head." The stained glass window is scenery.	
+
+[The Study] 
+The Study is a room in hyrule castle. "The room the royal family used when working. [line break][line break]The [Southwest Passage] is to the west. The [East Passage] is to the north".A wooden desk is in the study. The wooden desk is a table. A note and a pen are on the desk. A wooden chair is in the study.  The wooden chair is a chair. The calamity of the study is 1. The description of the note is "Books contain great wisdom.".
+
+[The Guard Chamber] 
+The Guard Chamber is a room in hyrule castle. "The chamber where the royal guards would spend their breaks.[line break][line break]The [West Passage] is to the east. The [Northwest Passage] is to the north. The [Southwest Passage] is to the south. ". A metal chair is in the Guard Chamber. It is a chair. A metal table is in the Guard Chamber. A key-hook is in Guard Chamber. The key-hook is fixed in place. The guard key is on the key-hook. The calamity of the guard chamber is 2.
+
+[The Dining Hall] 
+The Dining Hall is a room in hyrule castle. "The room where the royal family would host guests for meals.[line break][line break]The [Southwest Passage] is to the north. The [South Passage] is to the east.". [Do some stuff here about the korok door]. A dining table is in the Dining Hall. There are eight chairs in the Dining hall. A fruit bowl is on the dining table. There is a knife on the dining table. The calamity of the dining hall is 1. The fruit bowl is a container. 
+
+Apple, orange, and banana are kinds of food. 
+There is 5 apples, 5 oranges, and 5 bananas in the fruit bowl. [The apple, orange, and banana are food.]
+
+[The Library ] 
+The Library is a room in hyrule castle. "The walls a are lined with books. It seems like it would have been a nice place to relax.[line break][line break]The [Royal Chamber] is to the north, through the [Royal Door]. The [Courtyard] is to the west. The [East Passage] is to the south.". A large bookshelf is in the library. "The bookshelf has a large amount of books. Though most of them do not seem interesting.". The bookshelf is a supporter. There is a blue book on the bookshelf. The blue book is openable and closed. The royal key is in the blue book. There is a plush chair in the Library. It is a chair. There is a fireplace in the Library. The calamity of the library is 2.
+
+[The Lockup] 
+The Lockup is a room in hyrule castle. "This is the room where prisoners were kept.[line break][line break]The [Northwest Passage] is to the south.". There are four cells in the Lockup. There is a big cell in the Lockup. The big cell is a locked cell. Farore's pearl is in the big cell.
+
+[The Healing Spring ] 
+The Healing Spring is a room in hyrule castle. "The waters in this [pool] shimmer with gold.[line break][line break]The [Spring Door] is to the east.". There is a pool in the Healing Spring. "The water in this pool is shimmering with golden power. You could fill something with this. ". The pool is an enterable container. There is a healing water in the pool. The healing water is fixed in place. 
+
+After entering the pool:
+	If the player is inside the pool and there is healing water in the pool:
+		if the max health of the player is not 150:
+			say "The waters of this pool have increased your vitality. Your maximum health is now 150."; 
+			now the max health of the player is 150;
+		now the present health of the player is the max health of the player;
+		say "Your health has been restored."
+		
+
+[The Armory]  
+The Armory is a room in hyrule castle. "[If the player is in the armory for the first time]This room holds the weapons and armor of the Royal Guard. Well, at least it used to...[otherwise]A room for weapon storage.[end if][line break][line break]The [South Passage] is to the south, through the [Armory Door].". There is a weapon rack in the armory. The rack is a supporter. There are five swords on the rack. There are two bows on the rack. There is a chest in the armory. The chest is a closed container. Din's Pearl is in the chest. The chest is openable.  The calamity of the armory is 2.
+
+[The Royal Chamber] 
+The Royal Chamber is a room in hyrule castle. "The bedroom of the late King and Queen.[line break][line break]The [Library] is to the south, through the [Royal Door].". The Royal bed and an extravagent desk are in the Royal Chamber. The Royal bed is an enterable supporter. nayru's Pearl is on the extravagent desk. The calamity of the Royal chamber is 1.
+
+[The Courtyard] 
+The Courtyard is a room in hyrule castle. "[if the player is in the courtyard for the first time]The beautiful gardens you remember are gone. The calamity has tainted them. The only things that remain unaffected are three statues. Each statue seems to have a different personality to it. One looks powerful, the second looks courageous, and the third looks wise.[otherwise]The once-beautiful, now calamity stricken courtyard. [end if][line break][line break]The [Sanctum] is to the north, through the [Grand Entrance]. The [West Passage] is to the west. The [Library] is to the east.". The calamity of the courtyard is 3. There is a statue of Din, a statue of Farore, and a statue of Nayru in the courtyard. The statue of din, the statue of farore, and the statue of nayru are statues. There is a sharp branch in the courtyard. 
+
+The description of the statue of din is "[if Din's Pearl is on the statue of din]A brilliant red statue of the goddess Din, holding her pearl of power above her head.[otherwise]A sickly gray statue of one of the goddesses. It has an aura of power.[end if]"
+
+The description of the statue of farore is "[if Farore's Pearl is on the statue of farore]A vibrant green statue of the goddess Farore, holding her pearl of courage above her head.[otherwise]A boring gray statue of one of the goddesses. It has an aura of courage.[end if] You feel a strong connection with this statue in particular. "
+
+The description of the statue of nayru is "[if Nayru's Pearl is on the statue of Nayru]A deep blue statue of the goddess Nayru, holding her pearl of wisdom above her head.[otherwise]A dull gray statue of one of the goddesses. It has an aura of wisdom.[end if]"
+
+[Kitchen]
+The Kitchen is a room in hyrule castle. "The [Southwest Passage] is to the west.". The pantry is in the kitchen. The pantry is an opaque, openable, container. The counter is in the kitchen. The counter is a supporter. A bread is a kind of food. There is 10 break in the pantry. 
+
+[West Passage]
+The West Passage is room in hyrule castle. "A passage on the west side of [Hyrule Castle]. There is not much here except for a window.[line break][line break]The [Northwest Passage] is to the northwest. The [Guard Chamber] is to the west. The [Southwest Passage] is to the southwest. The [Courtyard] is to the east.". The forest window is in the west passage. [Description] The forest window is scenery.
+
+[Northwest Passage]
+The Northwest Passage is a room in hyrule castle. "A passage on the northwestern side of [Hyrule Castle]. A large green rug spans this passage. There is a window on the left side, and a painting on the right.[line break][line break]The [Lockup] is to the north. The [Guard Chamber] is to the south. The [West Passage] is to the southeast.". The Farore Painting is in the northwest passage. "A painting depicting a [bold type]green[roman type] goddess creating beings to inhabit the world and breathing life into them. At the top of the painting there is a golden triangle adorned with the green symbol of [bold type] Courage[roman type]. [line break][line break]There is a placard at the bottom."The farore painting is scenery. The hebra window is in the northwest passage. "You can see the icy mountains of hebra through this window.". The hebra window is scenery. The farore placard is in the northwest passage. "The placard reads: 'A depiction of the goddess [bold type]Farore[roman type] creating the life of this realm. She is known for her liveliness and embodiment of [bold type]Courage[roman type].' ". The farore placard is scenery. There is a green rug in the northwest passage. "A fancy green rug.".
+
+[Southwest Passage]
+The Southwest Passage is a room in hyrule castle. "A passage on the southwestern side of [Hyrule Castle]. There is a window on the left side. [line break][line break]The [Guard Chamber] is to the north. The [Dining Hall] is to the south. The [South Passage] is to the southwest. The [Kitchen] is to the west. The [West Passage] is to the northeast.". The moat window is in the southwest passage. "You can see the [Hyrule Castle] moat from this window.". The moat window is scenery. [] 
+
+[East Passage]
+The East passage is a room in hyrule castle. "A passage on the eastern side of [Hyrule Castle]. There is a window on the right, and a painting to the left.[line break][line break]The [Library] is to the north. The [South Passage] is to the southwest. The [Study] is to the south.". The nayru painting is in the east passage. "A painting depicting a [bold type]blue[roman type] goddess bringing law to the newly shaped world. At the top of the painting is a golden triangle adorned with the symbol of [bold type]Wisdom[roman type].[line break][line break]There is a placard at the bottom.".The nayru painting is scenery. The lanayru window is in the east passage. "You can see the damp marshlands of lanayru through this window". The lanayru window is scenery. The nayru placard is in the east passage. "The placard reads: 'A painting depicting the goddess [bold type]Nayru[roman type] bringing law to our world. She is know for her love and embodiment of [bold type]Wisdom[roman type]. ' ". The nayru placard is scenery. There is a blue rug in the east passage. "A fancy blue rug.".
+
+[South Passage]
+The South passage is a room in hyrule castle. "A passage on the southern side of [Hyrule Castle]. There is a window and a painting along the south wall. [line break][line break]The [Armory] is to the north, through the [Armory Door]. The [Southwest Passage] is to the northwest. The [Dining Hall] is to the west. The [Study] is to the east. The [East Passage] is to the northeast.". The Din Painting is in the south passage. "A painting depicting a [bold type]red[roman type] goddess shaping the bare earth and carving features into its land. At the top of the painting there is a golden triangle adorned with the symbol of [bold type]Power[roman type]. [line break][line break]There is a placard at the bottom.". The din painting is scenery. The hyrule window is in the south passage. "You can see the vast jungles of Faron through this window". The hyrule window is scenery. The din placard is in the south passage. "The placard reads: 'A painting depicting the goddess [bold type]Din[roman type] forming the world. She is known for her strength and embodiment of [bold type]Power[roman type].'". The din placard is scenery. There is a red rug is in the South Passage. "A fancy red rug.".
+
+After examining the red rug:
+	if the armory key is not in the South Passage:
+		say "Wait... there is something under this rug!";
+
+After taking the red rug:
+	say "You notice a key was hidden underneath the rug. That does not seem very secure.";
+	now  The Armory Key is in the south passage;
+	
+[THE TRIALS----------------------------------------------------------------------------------------------------]
+[Trial of Power]
+Trial of Power is a room in the trials.
+
+[Trial of Wisdom]
+Trial of Wisdom is a room in the trials. 
+
+[Trial of Courage]
+Trial of Courage is a room in the trials. 
+
+Section 3 - Connections
+
+[Direct]
+[Temple Grounds]
+North side is north of the temple of time, north of east side, and north of west side. 
+East side is east of the temple of time, east of the north side, and east of the south side.
+West side is west of the temple of time, west of the north side, and west of the south side. 
+South side is south of the temple of time, south of the west side, and south of the east side. 
+
+[Hyrule Castle]
+The west passage is west of the courtyard.
+The west passage is east of the guard chamber. 
+The library is east of the courtyard. 
+The east passage is south of the library. 
+The study is south of the east passage. 
+The east passage is northeast of the south passage. 
+The study is east of the south passage. 
+The dining hall is west of the south passage. 
+The southwest passage is north of the dining hall.
+The kitchen is east of the southwest passage. 
+The guard chamber is north of the southwest passage. 
+The lockup is north of the northwest passage. 
+The northwest passage is north of the guard chamber. 
+The south passage is southeast of the southwest passage. 
+The west passage is northeast of the southwest passage. 
+The west passage is southeast of the northwest passage. 
+
+[Doors]
+The Grand Entrance, the Spring Door, The Armory Door, and the Royal Door are doors.
+The Grand Entrance is south of the Sanctum and north of the Courtyard.[] The Grand Entrance is lockable and locked. 
+The Spring Door is east of the Healing Spring and west of the Dining Hall.[] The Spring Door is lockable and locked. 
+The Royal Door is south of the Royal Chamber and north of the Library.[] The Royal Door is lockable and locked. 
+The Armory Door is north of the south passage and south of the Armory.[] The Armory door is lockable and locked.
+
+Section 4 - Map Item Rules and Properties
+
+[Keys]
+The guard key unlocks the big cell.
+The armory key unlocks the armory door. 
+The royal key unlocks the Royal Door. 
+The spring key unlocks the spring Door.
+
+[Statues]
+Placed pearls is a number that varies. Placed Pearls is 0.
+
+After putting din's pearl on the statue of din:
+	say "Red energy emits from Din's Pearl. The statue below has gone from a sickly gray to a brilliant red!";
+	now din's pearl is fixed in place;
+	increase placed pearls by 1; 
+	say "[Din's Pearl] has been placed. You have placed [placed pearls] pearls.";
+	[Add the color to description]   
+
+After putting nayru's pearl on the statue of nayru:
+	say "Blue energy emits from nayru's Pearl. The statue below has gone from a boring gray to a deep blue!";
+	now nayru's pearl is fixed in place;
+	increase placed pearls by 1;  
+	say "[Nayru's Pearl] has been placed. You have placed [placed pearls] pearls.";
+	[Add the color to description]   
+
+After putting farore's pearl on the statue of farore:
+	say "Green energy emits from Farore's Pearl. The statue below has gone from a dull gray to a vibrant green!";
+	now farore's pearl is fixed in place;
+	increase placed pearls by 1;
+	say "[Farore's Pearl] has been placed. You have placed [placed pearls] pearls.";
+	[Add the color to description]
+
+[Boss Door]
+Every turn when the player is in the courtyard: 
+	If din's pearl is on statue of din and nayru's pearl is on statue of nayru and farore's pearl is on statue of farore and the pedestal is not in the courtyard:
+		say "A Blue sword with a winged hilt emerges from the center of the courtyard. You recognize this weapon. The Sword that Seals Darkness.... The [Master Sword].";
+		now the pedestal is in the courtyard;
+
+Chapter 4 - Non-Player Characters
+
+[Ganon]
+Ganon is a person. Ganon is proper-named. Ganon is in the Sanctum. Ganon carries a broad sword. Ganon is hostile. The present health of ganon is 3000. The max health of Ganon is 3000. 
+After stabbing ganon with The Master Sword:
+	decrease the present health of ganon by 1000;
+	say "[one of]AHHHHHHH![or]The light burns![or]This cannot be happening![as decreasingly likely outcomes]([ganon][apostrophe]s health: [present health of ganon])[line break]";
+After shooting ganon with The Bow of Light:
+	decrease the present health of ganon by 1000;
+	say "[one of]AHHHHHHH![or]The light burns![or]This cannot be happening![as decreasingly likely outcomes]([ganon][apostrophe]s health: [present health of ganon])[line break]";
+Every turn when the player can see Ganon:
+	if Ganon is alive and Ganon is hostile:
+		say "'[one of]It'll be years before you can face me!'[or]Evil has one before and it will win again!'[or]You may have the sword, but you are weak!'[or]You think courage will save you now!'[or]EVIIIIIILLLLL!'[or]Yawn.... this is child's play!'[or] Warlock PAWNCH!'[as decreasingly likely outcomes]";
+After going through the Grand Entrance:
+	now the Grand Entrance is closed;
+	now the Grand Entrance is not openable;
+	say "'You made a mistake by coming here Hero. '[line break][line break]You hear the Grand Entrance close behind you...";
+
+[Gohma]
+Gohma is a person. An eye is a kind of thing. A Gohma eye is a kind of eye. Gohma carries three Gohma eyes. Mandibles are a blade. The maximum damage of mandibles is 30. The max health of gohma is 300. The present health of gohma is 300. Gohma carries a mandibles. 
+After stabbing a gohma eye (called target) with something:
+	remove the target from play;
+	decrease the present health of gohma by 100;
+	say "SHREEEIEEIIEIEIEIEIEIEIEIIEIELK!";
+	say "You have stabbed gohma in the eye!([gohma][apostrophe]s health: [present health of gohma])[line break]";
+	if gohma is dead:
+		remove Mandibles from play;
+		say "You have slain the foul creature Gohma![line break]";
+After stabbing gohma with anything:
+	if gohma is dead:
+		remove Mandibles from play;
+		say "You have slain the foul creature Gohma![line break]";
+After shooting gohma with anything:
+	if gohma is dead:
+		remove Mandibles from play;
+		say "You have slain the foul creature Gohma![line break]";
+
+The player carries a broad sword. The player carries a bomb bow.
+
+[Dodongo]
+Dodongo is a person. Spiked Armor is a blade. The maximum damage of spiked armor is 60. The present health of dodongo is 300. The max health of dodongo is 300. Dodongo carries spiked armor. 
+After shooting Dodongo with Bomb Bow:
+	decrease the present health of Dodongo by 50;
+	decrease the maximum damage of spiked armor by 20;
+	say "Dodongo Roars in pain! Its armor is begininning to crack.";
+	if maximum damage of spiked armor is 0:
+		remove spiked armor from play;
+		say "The [dodongo][apostrophe]s armor is broken!";
+	if dodongo is dead:
+		say "You have slain the foul creature Dodongo![line break]";
+After stabbing dodongo with anything:
+	if dodongo is dead:
+		say "You have slain the foul creature Dodongo![line break]";
+After shooting dodongo with anything:
+	if dodongo is dead:
+		say "You have slain the foul creature Dodongo![line break]";
+
+[Korok]
+A korok is a kind of person. The max health of a korok is usually 10.  
+A korok can be happy, sad, or mischevious (this is the temperment property).  A korok is usually mischevious. 
+Definition: A korok is hungry if it does not carry a food.
+Definition: A korok is full if it carries a food.
+
+Persuasion rule for asking a korok to try giving something to the player:
+	if the korok is happy:
+		persuasion succeeds;
+	otherwise:
+		persuasion fails;
+		
+The block giving rule is not listed in the check giving it to rules. 
+Korok1 is in the Dining Hall. Korok1 is a korok. The Korok1 carries the spring key. The printed name of Korok1 is "Korok".
+After giving a food to a korok (called target):
+	now the target is happy;
+	say "WOW! Thank you! *chewing noises*";	
+Every turn when the player can see Korok1:
+	if the Korok1 is alive:
+		if Korok1 is sad:
+			say "The korok [one of]is holding a strange key[or]is moping in the corner[or]is staring at the fruit bowl[or]whimpering[as decreasingly likely outcomes].";
+		otherwise if Korok1 is happy:
+			say "The korok [one of] is happily eating[or]chews delightedly[or]gives you a grateful look[as decreasingly likely outcomes].";
+		otherwise if Korok1 is mischevious:
+			if Korok1 is in a room (called current space):
+				let next space be a random room which is adjacent to the current space;
+				move Korok1 to next space;
+				say "The korok [one of] giggles and runs to [the next space][or] zips under your legs and into [the next space][or] sticks its tongue out at your and poofs away [as decreasingly likely outcomes].";
+
+[Darknut]
+A Darknut is a kind of person. A Darknut always carries a broad sword. The max health of a Darknut is usually 30. A Darknut is usually hostile. 
+There is a Darknut in the Armory. There is a Darknut in the West Passage.
+[Special stuff]
+
+[Moblin]
+A Moblin is a kind of person. A Moblin always carries a Moblin spear. The max health of a Moblin is usually 50. A Moblin is usually hostile.  
+There is a Moblin in the Lockup. 
+[Special stuff]
+
+Part 1 - The Game
+
+The player is in the North Side. 
+
+When play begins:
+	say "After a long and grueling battle against the calamity, you find yourself in the courtyard of Hyrule Castle. The calamity has corrupted this land and its influence can be battled with objects of great power. Find the pearls of the goddesses that have been scattered throughout Hyrule Castle and return them to the statues before your time runs out.";
+	
+Section 1 - Statue Rules
+
+The printed name of the statue of Din is "Powerful Statue". The printed name of the statue of Farore is "Courageous statue". The printed name of the statue of Nayru is "Wise statue". 
+
+The printed name of Din's Pearl is "Red Pearl". The printed name of Farore's Pearl is "Green Pearl". The printed name of Nayru's Pearl is "Blue Pearl"
+
+Understand "din's statue" or "powerful statue" as statue of din. 
+Understand "farore's statue" or "courageous statue" as statue of farore.
+Understand "nayru's statue" or "wise statue" as statue of nayru.
+
+Understand "red pearl" as Din's Pearl.
+Understand "green pearl" as Farore's Pearl.
+Understand "blue pearl" as Nayru's Pearl. 
+
+After examining Din Placard:
+	now the printed name of Din's Pearl is "Din's Pearl";
+	now the printed name of Statue of Din is "Statue of Din";
+
+After examining Nayru Placard:
+	now the printed name of Nayru's Pearl is "Nayru's Pearl";
+	now the printed name of Statue of Nayru is "Statue of Nayru";
+
+After examining Farore Placard:
+	now the printed name of Farore's Pearl is "Farore's Pearl";
+	now the printed name of Statue of Farore is "Statue of Farore";
+	
+After unlocking the Armory Door with the armory key:
+	say "As you unlock the Armory Door, the armory key vanishes";
+	remove the armory key from play;
+	
+After unlocking the Royal Door with the royal key:
+	say "As you unlock the Royal Door, the  royal key vanishes";
+	remove the royal key from play;
+
+After unlocking the big cell with the guard key:
+	say "As you unlock the big cell, the guard key vanishes";
+	remove the guard key from play;
+
+After unlocking the Spring door with the spring key:
+	say "As you unlock the [Spring Door], the spring key vanishes";
+	remove the spring key from play;
+	
+Section 3 - Help Menu
+
+[Table of Basic Help Options (continued)
+title		description
+"Attacking"		"In order to attack. use the command 'stab {target} with {weapon}' if the weapon is a blade or 'shoot {target} with {weapon} if it is ranged."
+"Placing"		"You can use the command 'place {object} on {supporter}' to place an object in addition to the 'put' action."
+"Eating"		"You will find food in some rooms. Eat it to restore health."]
+
+Chapter 1 - The Questions
+
+[The Beginning]
+Profile is a a number which varies. Profile is 0.
+Heroism is a number which varies. Heroism is 0. 
+
+[INTRODUCTION PASSAGE]
+
+When play begins:
+	let Q1 be 0; 
+	let Q2 be 0; 
+	let Q3 be 0; 
+	let Q4 be 0;
+	say "Please answer the following yes/no questions.[line break][line break]";
+	[Question 1]
+	say "Did you conquer the Divine Beasts?";
+	if the player consents: 
+		now Q1 is 100; 
+		increase Heroism by 1; 
+	[Question 2]
+	say "Did you complete 40 or more shrines?";
+	if the player consents:
+		now Q2 is 10;
+		increase Heroism by 1;
+	[Question 3]
+	say "Did you  help others along your jouney?"; 
+	if the player consents:
+		now Q3 is 1;
+		increase Heroism by 1;
+	[Select Profile] 
+	let P be Q1 + Q2 + Q3;
+	if P is:
+		-- 0000:
+			say "Selecting Profile 1";
+			now Profile is 1;
+		-- 0001: 
+			say "Selecting Profile 2";
+			now Profile is 2;
+		-- 0010: 
+			say "Selecting Profile 3";
+			now Profile is 3;
+		-- 0011: 
+			say "Selecting Profile 4";
+			now Profile is 4;
+		-- 0100: 
+			say "Selecting Profile 5";
+			now Profile is 5;
+		-- 0101: 
+			say "Selecting Profile 6";
+			now Profile is 6;
+		-- 0110: 
+			say "Selecting Profile 7";
+			now Profile is 7;
+		-- 0111: 
+			say "Selecting Profile 8";
+			now Profile is 8;
+	say "[line break]Link has [Heroism] heroism";
+	
+Chapter 2 - Scenes
+
+Section 0 - Declaration of Scenes

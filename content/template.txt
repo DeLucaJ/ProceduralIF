@@ -83,32 +83,3 @@ Section 0 - Declaration of Scenes
 
 $anchor
 
-Section 1 - Scene Rules
-
-When Introduction Begins:
-	say "Beginning Intro.";
-
-When Profile1 Begins:
-	say "Beginning Profile1.";
-
-When Profile2 Begins:
-	say "Beginning Profile2.";
-
-When Profile3 Begins:
-	say "Beginning Profile3.";
-
-When Profile4 Begins:
-	say "Beginning Profile4.";
-	
-When Profile5 Begins:
-	say "Beginning Profile5.";
-	
-When Profile6 Begins:
-	say "Beginning Profile6.";
-	
-When Profile7 Begins:
-	say "Beginning Profile7.";
-	
-When Profile8 Begins:
-	say "Beginning Profile8.";
-	
